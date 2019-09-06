@@ -1,0 +1,52 @@
+/*Source: https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp*/
+
+/* The Overlay (background) */
+.overlay {
+  height: 0;/*Start with 0 here, then use JS to change it to 100% upon click of a button*/
+  width: 100%;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 54px;
+  background-color: black;
+  overflow: hidden; /* Disable horizontal scroll */
+  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+  height: 100%;
+  width: 100%; /* 100% width */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+/* The navigation links inside the overlay */
+.overlay-content button {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 28px;
+  color: white;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: 0px;
+  color: white;
+  margin: 10px 10px;
+  overflow: hidden;
+  display: block; /* Display block instead of inline */
+  transition: 0.3s; /* Transition effects on hover (color) */
+}
+/* When you mouse over the navigation links, change their color */
+.overlay-content button:hover, .overlay-content button:focus {
+  color: gold;
+}
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}

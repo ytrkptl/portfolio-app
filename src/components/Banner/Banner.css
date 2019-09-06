@@ -1,0 +1,60 @@
+.imageContainerParent {
+	display: block;
+	max-width: 960px;
+	margin: 10px auto;
+	max-height: 80%;
+	overflow: hidden;
+}
+.imageContainer {
+	position: relative;
+	overflow: hidden;
+	display: flex;
+	background: rgb(29, 28, 28);
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	flex-direction: column;
+	padding: 10px;
+	max-width: 960px;
+	text-align: center;
+	margin: 0px 10px;
+	box-shadow: 2px 2px solid black;
+	min-height: 100vh;
+	padding-bottom: 15px;
+}
+.aboveNameText {
+	color: #ffeaa7;
+	text-align: center;
+}
+.nameText {
+	color: #74b9ff;
+	text-align: center;
+	margin: 0px;
+	margin-bottom: 20px;
+	font-size: 48px;
+	font-weight: bold;
+}
+.profilePhoto {
+	height: 140px;
+	width: 140px;
+	margin: 10px;
+	border-radius: 125px;
+}
+.belowNameText {
+	color: #e0e0e0;
+	text-align: center;
+	margin: 10px 0px;
+	font-style: italic;
+}
+.aboveFunctionText {
+	color: #00cec9;
+	text-align: center;
+	margin: 10px;
+	font-style: italic;
+}
+.teacherToDevImage {
+	max-width: 550px;
+	width: 75%;
+	margin: 10px;
+	margin-bottom: 30px;
+}

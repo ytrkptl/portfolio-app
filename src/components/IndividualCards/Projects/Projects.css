@@ -1,0 +1,186 @@
+.projectsPillParent {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	width: auto;
+	padding-bottom: 2%;
+	padding-top: 2%;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	border-top: 1px solid black;
+	overflow: hidden;
+}
+.projectsPillMother {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 10px;
+	padding: 0px;
+	overflow-wrap: break-word;
+	width: 400px;
+	height: 260px;
+	transition: all .2s ease-in-out;
+	color: black;
+	border-bottom: 1px solid gray;
+	border-right: 1px solid gray;
+}
+.projectsPillMother:hover {
+	transform: scale(1.03);
+	box-shadow: 4px 4px 4px 0px rgb(82, 82, 82);
+	text-decoration: none;
+	color: black;
+}
+
+.projectsImage {
+	width: 90%;
+	max-height: 240px;
+}
+.mobileImage {
+	height: 90%;
+	/* max-height: 240px; */
+}
+
+.projectsPill {
+	font-size: 18px;
+	font-weight: 500;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	overflow-wrap: break-word;
+	border-radius: 22px;
+	height: 70px;
+}
+.project-modal {
+	background-color: rgb(0, 0, 0, 0.4);
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.responsive {
+	background-color: white;
+	height: 50%;
+	width: 70%;
+	min-width: 280px;
+	max-width: 400px;
+	min-height: 320px;
+	max-height: 500px;
+	position: absolute;
+	border: 1px solid black;
+	border-radius: 12px;
+	box-sizing: border-box;
+}
+
+.main {
+	padding: 10px;
+	padding-bottom: 0;
+	overflow: hidden;
+	height: 100%;
+	box-sizing: border-box;
+}
+
+.modalGrid {
+	display: grid;
+	grid-template-rows: 2fr 7fr 3fr;
+	height: 100%;
+	box-sizing: border-box;
+	grid-gap: 10px;
+}
+.modalRow1 {
+	display: inline-flex;
+	/* background-color: white; */
+	padding: 10px;
+	margin: 0;
+	box-sizing: border-box;
+	font-size: 24px;
+	font-weight: bold;
+	transition: all 0.2s ease-in-out;
+	border-bottom: 1px solid gray;
+	padding-right: 20px;
+}
+.modalRow2 {
+	display: flex;
+	/* background-color: orange; */
+	box-sizing: border-box;
+	padding: 10px;
+	margin: 0;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+.modalRow3 {
+	display: inline-grid;
+	grid-template-columns: 1fr 1fr;
+	/* background-color: rebeccapurple; */
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	padding: 10px;
+	margin: 0;
+	border-top: 1px solid gray;
+}
+.modalRow3Col1 {
+	/* background-color: antiquewhite; */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-sizing: border-box;
+	border-right: 1px solid gray;
+	cursor: pointer;
+}
+.modalRow3Col2 {
+	/* background-color: plum; */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-sizing: border-box;
+	cursor: pointer;
+}
+.modalRow3SpanLink {
+	text-decoration: underline;
+	color: blue;
+	margin-right: 10px;
+}
+.modal-close {
+	font-size: 3rem;
+	font-style: bold;
+	cursor: pointer;
+	position: absolute;
+	top: 0%;
+	right: 5%;
+}
+
+.modal-close:hover {
+	color: gray;
+	cursor: pointer;
+}
+
+@media screen and (max-width: 927px) {
+	.projectsPillMother {
+		border-right: none;
+	} 
+}
+@media screen and (max-width: 520px) {
+	.modalRow1 {
+		padding-right: 100px;
+	}
+}
+@media screen and (max-width: 500px) {
+	.projectsPillMother {
+		/* the below will make it 100% of parent element */
+		width: 100%;
+	} 
+}
+@media screen and (max-width: 450px) {
+	.modalRow1 {
+		font-size: 20px;
+	} 
+  .modalRow3SpanLink {
+		font-size: 14px;
+	}
+}
