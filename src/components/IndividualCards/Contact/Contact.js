@@ -11,7 +11,7 @@ const Contact = ({ title, id, cardNum }) => {
 					<a target="_top" href="mailto:ytrkptl.ndmlr@gmail.com">ytrkptl.ndmlr@gmail.com</a>:
 				</h3>
 				<div className="contactPillParent">
-					<form className="contactForm" action="https://formsubmit.co/f6ad54c75b76a565b687d42883febbac" method="POST">
+					<form className="contactForm" action={process.env.REACT_APP_FORM_SUBMIT_URL} method="POST">
 						<div className="contactFormDiv">
 							<label className="contactLabel" htmlFor="name">Name:</label>
 							<input 
