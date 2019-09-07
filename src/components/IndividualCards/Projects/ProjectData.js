@@ -47,7 +47,7 @@ export const projectData = [
 	},
 	{ 
 		projectName: 'School Employee Directory', 
-		siteLink: 'https://achsdirectory.herokuapp.com/', 
+		siteLink: 'https://achsdirectory.netlify.com/', 
 		gitHubLink: 'https://github.com/ytrkptl/achsdirectory', 
 		imageUrl: achsdirectory,
 		description: `Originally, this employee directory was made as a helpful
@@ -65,7 +65,7 @@ export const projectData = [
 	// },
 	{ 
 		projectName: 'Portfolio App', 
-		siteLink: 'https://yatrik-dev.netlify.com/', 
+		siteLink: 'https://yatrik.dev/', 
 		gitHubLink: 'https://github.com/ytrkptl/portfolio-app', 
 		imageUrl: portfolio,
 		description: `This is obviously the portfolio site you are currently looking at
@@ -74,10 +74,11 @@ export const projectData = [
 	{ 
 		projectName: `Android App`, 
 		projectUrl: ``,
-		gitHubLink: ``, 
+		gitHubLink: `https://github.com/ytrkptl/tazewell-tour-guide`, 
 		imageUrl: tazewell,
 		description: `As part of my nanodegree from Udacity, I built this using
-		Android Studio to practice my Android skills. It uses XML and Java as the primary 
-		languages. It isn't published anywhere but is avaiable to see on my device if requested.`
+		Android Studio to practice my Android skills. This is about 1.5 to 2 years ago. It uses XML and Java as the primary 
+		languages. It isn't published anywhere but is avaiable to see on my device if requested.
+		The repo is linked but was only recently pushed to GitHub.`
 	}
 ];
