@@ -10,7 +10,7 @@ const Footer = () => {
 		<div>
 			<footer className="footerClass">
 				<div className="divInFooter"
-					onClick={()=>window.open(`https://www.linkedin.com/in/yatrik-patel-7351b5170/`)}>
+					onClick={()=>window.open(`https://www.linkedin.com/in/yatrik-patel-dev/`)}>
 					<span className="spanInFooter2">Linked</span>
 					<img width="auto" height="28px" src={LinkedInLogo} alt="GitHub" />
 				</div>
