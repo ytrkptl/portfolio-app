@@ -19,7 +19,7 @@ const Banner = () => {
 					Math teacher passionate about becoming a developer
 				</h3>
 				<h3 className="aboveFunctionText">
-					I guess the best way to express that is with the following items:
+					I guess the best way to express that is with the following:
 				</h3>
 				<img alt="teacher to developer function" src={teacherToDev} className="teacherToDevImage"/>
 				<ButtonInCard nextCardName='aboutme' />
