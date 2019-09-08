@@ -3,7 +3,7 @@ import Navigation from '../components/Navigation/Navigation';
 import Banner from '../components/Banner/Banner';
 import CardList from '../components/CardList';
 import Footer from '../components/Footer/Footer';
-import arrow from '../images/arrow2.png';
+import arrow from '../assets/arrow2.png';
 
 import './App.css'
 

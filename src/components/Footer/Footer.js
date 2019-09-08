@@ -1,7 +1,7 @@
 import React from 'react';
-import LinkedInLogo from '../../images/white-li-res.png'
-import GitHubLogo from '../../images/GitHub-Mark-Light-64px.png'
-import EmailIcon from '../../images/email-icon-white.png';
+import LinkedInLogo from '../../assets/white-li-res.png'
+import GitHubLogo from '../../assets/GitHub-Mark-Light-64px.png'
+import EmailIcon from '../../assets/email-icon-white.png';
 
 import './Footer.css';
 

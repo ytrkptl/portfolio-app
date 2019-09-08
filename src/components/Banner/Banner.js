@@ -1,7 +1,7 @@
 import React from 'react';
-import teacherToDev from '../../images/teacherToDev.png';
+import teacherToDev from '../../assets/teacherToDev.png';
 import ButtonInCard from '../Button-in-card/Button-in-card';
-import ProfilePhoto from '../../images/profile-photo-2.jpg';
+import ProfilePhoto from '../../assets/profile-photo-2.jpg';
 import './Banner.css';
 
 const Banner = () => {

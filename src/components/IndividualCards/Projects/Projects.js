@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import CustomCard3 from '../../Card-wrapper/CustomCard3';
 import ButtonInCard from '../../Button-in-card/Button-in-card'
 import { projectData } from './ProjectData';
-import GitLogo from '../../../images/GitHub-Mark-64px.png';
+import GitLogo from '../../../assets/GitHub-Mark-64px.png';
 import Modal from '../../Modal/Modal';
-import LinkIcon from '../../../images/iconfinder-link.svg';
+import LinkIcon from '../../../assets/iconfinder-link.svg';
 
 import './Projects.css';
 
@@ -19,6 +19,10 @@ const Projects = ({ title, id, cardNum }) => {
 
 	return (
 		<CustomCard3 id={id} cardNum={cardNum} title={title}>
+				<h3 className="projectSubtitle">
+					On a side note, be sure to <span className="projectSideNote">run the backend server links (if provided) first</span>
+					{` `}before running the frontend project, in case you're checking them out.
+				</h3>
 				<div className="projectsPillParent">
 				{
 					projectData.map((el, index)=>{

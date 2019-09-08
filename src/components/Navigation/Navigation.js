@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import Logo from '../Logo/Logo';
-import './Navigation.css';
 import Menu from '../Menu/Menu';
+import './Navigation.css';
 
 const items = [
 				{ topic: 'About Me', id: 'aboutme'},

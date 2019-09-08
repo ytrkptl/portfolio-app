@@ -1,3 +1,10 @@
+.projectSubtitle {
+	margin: 20px 0px 10px 0px;
+}
+.projectSideNote {
+	color: red;
+	text-decoration: underline;
+}
 .projectsPillParent {
 	display: flex;
 	align-items: center;

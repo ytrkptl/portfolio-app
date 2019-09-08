@@ -1,9 +1,9 @@
-import achsdirectory from '../../../images/achs-directory-responsive.png';
-import ecommerce from '../../../images/shop-tunnel.png';
-import face from '../../../images/new-face-rec-1.png';
-import blog from '../../../images/blog.png';
-import tazewell from '../../../images/tazewell2.png';
-import portfolio from '../../../images/portfolio-responsive.png';
+import achsdirectory from '../../../assets/achs-directory-responsive.png';
+import ecommerce from '../../../assets/shop-tunnel.png';
+import face from '../../../assets/new-face-rec-1.png';
+import blog from '../../../assets/blog.png';
+import tazewell from '../../../assets/tazewell2.png';
+import portfolio from '../../../assets/portfolio-responsive.png';
 				
 export const projectData = [
 	{ 
@@ -22,7 +22,7 @@ export const projectData = [
 		siteLink: 'https://new-face-rec-1.herokuapp.com/', 
 		gitHubLink: 'https://github.com/ytrkptl/new-face-rec-1',
 		siteBackendLink: `https://new-face-rec-1-api.herokuapp.com/`,
-		gHBackendLink: `https://github.com/ytrkptl/new-face-rec-1-api.git`,
+		gHBackendLink: `https://github.com/ytrkptl/new-face-rec-1-api`,
 		imageUrl: face,
 		description: `A face recognition app that uses the Clarifai API to 
 		detect multiple faces within the photo url's you upload to it. It allows
@@ -48,7 +48,9 @@ export const projectData = [
 	{ 
 		projectName: 'School Employee Directory', 
 		siteLink: 'https://achsdirectory.netlify.com/', 
-		gitHubLink: 'https://github.com/ytrkptl/achsdirectory', 
+		gitHubLink: 'https://github.com/ytrkptl/achsdirectory',
+		siteBackendLink: `https://achsdirectory-api.herokuapp.com/`,
+		gHBackendLink: `https://github.com/ytrkptl/achsdirectory-api`, 
 		imageUrl: achsdirectory,
 		description: `Originally, this employee directory was made as a helpful
 		tool for my school as a way to practice my React web-development
@@ -56,17 +58,10 @@ export const projectData = [
 		information including their schedule, location, phone, etc. It also has 
 		good animation that you can interact with.`
 	},
-	// { 
-	// 	projectName: `Equations Game`, 
-	// 	projectUrl: ``, 
-	// 	gitHubLink: ``,
-	// 	imageUrl: achsdirectory,
-	// 	description: ``
-	// },
 	{ 
 		projectName: 'Portfolio App', 
 		siteLink: 'https://yatrik.dev/', 
-		gitHubLink: 'https://github.com/ytrkptl/portfolio-app', 
+		gitHubLink: 'https://github.com/ytrkptl/portfolio-app',
 		imageUrl: portfolio,
 		description: `This is obviously the portfolio site you are currently looking at
 		built using React.`

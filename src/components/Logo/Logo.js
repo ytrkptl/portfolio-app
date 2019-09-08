@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../../images/math-processor-th.png';
+import logo from '../../assets/math-processor-th.png';
 import './Logo.css';
 
 const Logo = () => {
