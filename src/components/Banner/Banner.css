@@ -41,27 +41,17 @@
 	border-radius: 125px;
 }
 .belowNameText {
-	color: silver;
+	color: #e0e0e0;
 	text-align: center;
-	margin: 20px 0px;
-}
-.greenText {
-	color:  #00cec9;
-	text-align: center;
-	margin: 0px;
-	margin-bottom: 20px;
-	font-size: 16px;
+	margin: 10px 0px;
+	font-style: italic;
 }
 .aboveFunctionText {
-	color: silver;
+	color: #00cec9;
 	text-align: center;
 	margin: 10px;
-	font-family: 'Comic Sans MS';
-	font-size: 16px;
-}
-.aboveEquationText {
-	color: #e0e0e0;
-	margin: 0px 20px 20px 20px;
+	font-style: italic;
+	margin-bottom: 30px;
 }
 .teacherToDevImage {
 	max-width: 550px;
