@@ -57,28 +57,30 @@ const Projects = ({ title, id, cardNum }) => {
 															{el.description}
 														</div>
 														<div className="modalRow3">
-															<div className="modalRow3Col1"
-																onClick={()=>window.open(el.siteLink)}>
-																<span className="modalRow3SpanLink">View Site</span>
-																<img width="auto" height="24px" src={LinkIcon} alt="GitHub" />
-															</div>
-															<div className="modalRow3Col2"
-																onClick={()=>window.open(el.gitHubLink)}>
-																<span className="modalRow3SpanLink">GitHub Repo</span>
-																<img width="auto" height="28px" src={GitLogo} alt="GitHub" />
-															</div>
+															{
+																el.siteLink &&
+																<div className="modalRow3LinkLogoWrapper" onClick={()=>window.open(el.siteLink)}>
+																	<span className="modalRow3SpanLink">View Site</span>
+																	<img width="auto" height="24px" src={LinkIcon} alt="GitHub" />
+																</div>
+															}
+															{
+																el.gitHubLink &&
+																<div className="modalRow3LinkLogoWrapper" onClick={()=>window.open(el.gitHubLink)}>
+																	<span className="modalRow3SpanLink">GitHub Repo</span>
+																	<img width="auto" height="28px" src={GitLogo} alt="GitHub" />
+																</div>
+															}
 															{
 																el.siteBackendLink && 
-																	<div className="modalRow3Col1"
-																		onClick={()=>window.open(el.siteBackendLink)}>
+																	<div className="modalRow3LinkLogoWrapper" onClick={()=>window.open(el.siteBackendLink)}>
 																		<span className="modalRow3SpanLink">Backend Site</span>
 																		<img width="auto" height="24px" src={LinkIcon} alt="GitHub" />
 																	</div>
 															}
 															{
 																el.gHBackendLink &&
-																	<div className="modalRow3Col2"
-																		onClick={()=>window.open(el.gHBackendLink)}>
+																	<div className="modalRow3LinkLogoWrapper" onClick={()=>window.open(el.gHBackendLink)}>
 																		<span className="modalRow3SpanLink">Backend Repo</span>
 																		<img width="auto" height="28px" src={GitLogo} alt="GitHub" />
 																	</div>

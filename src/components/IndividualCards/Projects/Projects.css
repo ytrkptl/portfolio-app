@@ -39,7 +39,6 @@
 }
 .mobileImage {
 	height: 90%;
-	/* max-height: 240px; */
 }
 
 .projectsPill {
@@ -94,7 +93,6 @@
 }
 .modalRow1 {
 	display: inline-flex;
-	/* background-color: white; */
 	padding: 10px;
 	margin: 0;
 	box-sizing: border-box;
@@ -114,31 +112,21 @@
 	overflow-x: hidden;
 }
 .modalRow3 {
-	display: inline-grid;
+	display: grid;
 	grid-template-columns: 1fr 1fr;
-	/* background-color: rebeccapurple; */
-	padding: 0;
-	margin: 0;
 	box-sizing: border-box;
 	padding: 10px;
 	margin: 0;
 	border-top: 1px solid gray;
+	padding-left: auto;
+	padding-right: auto;
+	align-content: center;
+	justify-items: center;
 }
-.modalRow3Col1 {
-	/* background-color: antiquewhite; */
+.modalRow3LinkLogoWrapper {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	box-sizing: border-box;
-	border-right: 1px solid gray;
-	cursor: pointer;
-}
-.modalRow3Col2 {
-	/* background-color: plum; */
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	box-sizing: border-box;
 	cursor: pointer;
 }
 .modalRow3SpanLink {
