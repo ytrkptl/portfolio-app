@@ -6,6 +6,7 @@
   "dependencies": {
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
+    "react-remove-scroll": "^2.0.4",
     "react-scripts": "3.0.1"
   },
   "scripts": {

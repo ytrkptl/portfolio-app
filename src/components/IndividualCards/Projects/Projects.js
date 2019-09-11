@@ -5,6 +5,7 @@ import { projectData } from './ProjectData';
 import GitLogo from '../../../assets/GitHub-Mark-64px.png';
 import Modal from '../../Modal/Modal';
 import LinkIcon from '../../../assets/iconfinder-link.svg';
+import { RemoveScroll } from 'react-remove-scroll';
 
 import './Projects.css';
 
@@ -50,7 +51,7 @@ const Projects = ({ title, id, cardNum }) => {
 									if(index===keyNum){
 									return (
 										modal = 
-										<div key={index} className="project-modal">
+										<RemoveScroll key={index} className="project-modal">
 											<article className="responsive">
 												<main className="main">
 													<div className="modalGrid">
@@ -95,7 +96,7 @@ const Projects = ({ title, id, cardNum }) => {
 												<div className="modal-close" onClick={()=>openTheModal(false)}>&times;</div>
 											</article>
 										
-										</div>
+										</RemoveScroll>
 									)}
 									return modal
 								})
