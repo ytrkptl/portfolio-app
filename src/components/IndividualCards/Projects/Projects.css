@@ -96,7 +96,6 @@
 	grid-template-rows: 2fr 7fr 3fr;
 	height: 100%;
 	box-sizing: border-box;
-	grid-gap: 10px;
 }
 .modalRow1 {
 	display: inline-flex;
@@ -113,10 +112,13 @@
 	display: flex;
 	/* background-color: orange; */
 	box-sizing: border-box;
-	padding: 10px;
+	padding: 10px 10px 20px 10px;
 	margin: 0;
+	margin-bottom: 10px;
 	overflow-y: scroll;
 	overflow-x: hidden;
+	-webkit-overflow-scrolling: touch;
+	scroll-behavior: smooth;
 }
 .modalRow3 {
 	display: grid;

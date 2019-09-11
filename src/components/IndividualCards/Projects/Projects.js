@@ -5,9 +5,8 @@ import { projectData } from './ProjectData';
 import GitLogo from '../../../assets/GitHub-Mark-64px.png';
 import Modal from '../../Modal/Modal';
 import LinkIcon from '../../../assets/iconfinder-link.svg';
-import { RemoveScroll } from 'react-remove-scroll';
-
 import './Projects.css';
+import { RemoveScroll } from 'react-remove-scroll';
 
 const Projects = ({ title, id, cardNum }) => {
 	const [isModalOpen, openTheModal] = useState(false);
