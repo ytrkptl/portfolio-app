@@ -50,7 +50,7 @@ const Projects = ({ title, id, cardNum }) => {
 									if(index===keyNum){
 									return (
 										modal = 
-										<RemoveScroll key={index} className="project-modal">
+										<RemoveScroll removeScrollBar={false} key={index} className="project-modal">
 											<article className="responsive">
 												<main className="main">
 													<div className="modalGrid">
