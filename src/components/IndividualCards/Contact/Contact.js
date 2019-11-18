@@ -43,6 +43,7 @@ const Contact = ({ title, id, cardNum }) => {
 								placeholder="Enter your message here."
 							/>
 						</div>
+						<input type="hidden" name="_honeypot" value=""/>
 						<div className="contactFormDiv3">
 							<button type="submit" className="sendButton">Send</button>
 						</div>
