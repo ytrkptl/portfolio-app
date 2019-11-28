@@ -1,10 +1,3 @@
-// import achsdirectory from '../../../assets/achs-directory-responsive.png';
-// import ecommerce from '../../../assets/shop-tunnel.png';
-// import face from '../../../assets/face-rec.png';
-// import blog from '../../../assets/blog.png';
-// import tazewell from '../../../assets/tazewell2.png';
-// import portfolio from '../../../assets/portfolio-responsive.png';
-	
 export const projectData = [
 	{ 
 		projectName: `Shop-tunnel E-commerce store`, 
