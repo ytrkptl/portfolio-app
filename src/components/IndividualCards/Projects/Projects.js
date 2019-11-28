@@ -32,11 +32,11 @@ const Projects = ({ title, id, cardNum }) => {
 								title={title}
 								onClick={()=>modalHandler(index)}
 								text={'adfad'}>
-									<img 
-										src={el.imageUrl}  
-										alt="project-name" 
-										className={index!==6? `projectsImage` : 'mobileImage'} />
-									<span className="projectsPill">{el.projectName}</span>
+								<img 
+									src={el.imageUrl}  
+									alt="project-name" 
+									className={index!==6? `projectsImage` : 'mobileImage'} />
+								<span className="projectsPill">{el.projectName}</span>
 							</div>
 						)
 					})

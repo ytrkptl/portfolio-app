@@ -17,6 +17,7 @@ const Contact = ({ title, id, cardNum }) => {
 							<input 
 								name="name"
 								type="text"
+								id="name"
 								className="contactInput"
 								required
 								placeholder="Enter your name here."
@@ -29,6 +30,7 @@ const Contact = ({ title, id, cardNum }) => {
 							<input 
 								name="email"
 								type="email"
+								id="email"
 								className="contactInput"
 								required
 								placeholder="Enter your email here."
@@ -38,12 +40,13 @@ const Contact = ({ title, id, cardNum }) => {
 							<label className="contactLabel2" htmlFor="message">Message:</label>
 							<textarea 
 								name="message"
+								id="message"
 								className="contactInput2"
 								required
 								placeholder="Enter your message here."
 							/>
 						</div>
-						<input type="hidden" name="_honeypot" value=""/>
+					  <input type="hidden" name="_honeypot" value=""/>
 						<div className="contactFormDiv3">
 							<button type="submit" className="sendButton">Send</button>
 						</div>
