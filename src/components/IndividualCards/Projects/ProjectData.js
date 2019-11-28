@@ -3,7 +3,7 @@ export const projectData = [
 		projectName: `Shop-tunnel E-commerce store`, 
 		siteLink: 'https://shop-tunnel.herokuapp.com/', 
 		gitHubLink: 'https://github.com/ytrkptl/shop-tunnel', 
-		imageUrl: `https://res.cloudinary.com/dun1b4fpw/image/upload/f_auto,q_auto,w_360/v1574951670/portfolioapp/ecommerce.png`, 
+		imageUrl: `https://res.cloudinary.com/dun1b4fpw/image/upload/f_auto,q_auto,w_auto/v1574951670/portfolioapp/ecommerce.png`, 
 		description: `An e-commerce store where you can buy clothers. It incorporates
 		the use of Stripe Payment API for making payments, Firestore for storage, 
 		and Sign in with Email or Google. The code contains both client and server side code. 
@@ -16,7 +16,7 @@ export const projectData = [
 		gitHubLink: 'https://github.com/ytrkptl/new-face-rec-1',
 		siteBackendLink: `https://new-face-rec-1-api.herokuapp.com/`,
 		gHBackendLink: `https://github.com/ytrkptl/new-face-rec-1-api`,
-		imageUrl: `https://res.cloudinary.com/dun1b4fpw/image/upload/f_auto,q_auto,w_360/v1574951670/portfolioapp/face.png`,
+		imageUrl: `https://res.cloudinary.com/dun1b4fpw/image/upload/f_auto,q_auto,w_auto/v1574951670/portfolioapp/face.png`,
 		description: `A face recognition app that uses the Clarifai API to 
 		detect multiple faces within the photo url's you upload to it. It allows
 		you to register or sign-in, and keeps track of how many photos 
@@ -30,7 +30,7 @@ export const projectData = [
 		projectName: `Airtable Gatsby Blog`, 
 		siteLink: 'https://yatrik-blog.netlify.com/', 
 		gitHubLink: 'https://github.com/ytrkptl/yatrik-airtable-gatsby-blog', 
-		imageUrl: `https://res.cloudinary.com/dun1b4fpw/image/upload/f_auto,q_auto,w_360/v1574951670/portfolioapp/blog.png`,
+		imageUrl: `https://res.cloudinary.com/dun1b4fpw/image/upload/f_auto,q_auto,w_auto/v1574951670/portfolioapp/blog.png`,
 		description: `This server-side blog is built using Gatsby and is fully responsive
 		and allows you to toggle between night/day modes. It utilizes
 		Airtable's user-friendly database for storage and is built using
@@ -44,7 +44,7 @@ export const projectData = [
 		gitHubLink: 'https://github.com/ytrkptl/achsdirectory',
 		siteBackendLink: `https://achsdirectory-api.herokuapp.com/`,
 		gHBackendLink: `https://github.com/ytrkptl/achsdirectory-api`, 
-		imageUrl: `https://res.cloudinary.com/dun1b4fpw/image/upload/f_auto,q_auto,w_360/v1574951670/portfolioapp/achsdirectory.png`,
+		imageUrl: `https://res.cloudinary.com/dun1b4fpw/image/upload/f_auto,q_auto,w_auto/v1574951670/portfolioapp/achsdirectory.png`,
 		description: `Originally, this employee directory was made as a helpful
 		tool for my school as a way to practice my React web-development
 		skills. It allows quickly searching for a faculty's contact
@@ -55,7 +55,7 @@ export const projectData = [
 		projectName: 'Portfolio App', 
 		siteLink: 'https://yatrik.dev/', 
 		gitHubLink: 'https://github.com/ytrkptl/portfolio-app',
-		imageUrl: `https://res.cloudinary.com/dun1b4fpw/image/upload/f_auto,q_auto,w_360/v1574951670/portfolioapp/portfolio.png`,
+		imageUrl: `https://res.cloudinary.com/dun1b4fpw/image/upload/f_auto,q_auto,w_auto/v1574951670/portfolioapp/portfolio.png`,
 		description: `This is obviously the portfolio site you are currently looking at
 		built using React.`
 	},
@@ -63,7 +63,7 @@ export const projectData = [
 		projectName: `Android App`, 
 		projectUrl: ``,
 		gitHubLink: `https://github.com/ytrkptl/tazewell-tour-guide`, 
-		imageUrl: `https://res.cloudinary.com/dun1b4fpw/image/upload/f_auto,q_auto,w_360/v1574951670/portfolioapp/tazewell.png`,
+		imageUrl: `https://res.cloudinary.com/dun1b4fpw/image/upload/f_auto,q_auto,w_auto/v1574951670/portfolioapp/tazewell.png`,
 		description: `As part of my nanodegree from Udacity, I built this using
 		Android Studio to practice my Android skills. This is about 1.5 to 2 years ago. It uses XML and Java as the primary 
 		languages. It isn't published anywhere but is avaiable to see on my device if requested.
