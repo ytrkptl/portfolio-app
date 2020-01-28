@@ -21,7 +21,7 @@ export const projectData = [
 		you've uploaded. It also displays an emoji based on that number.
 		The project incldues both frontend and backend code in the same repository. 
 		Frontend is made using React. The backend uses Clarifai API, AWS Lambda using Serverless,
-		PostgreSQL, Docker, bcryptjs for authentication, and JWT tokens
+		PostgreSQL, Docker, bcrypt for authentication, and JWT tokens
 		for session manangment along with Redis.`
 	},
 	// { 
