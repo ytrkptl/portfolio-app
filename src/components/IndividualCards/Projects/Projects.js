@@ -11,7 +11,7 @@ import './Projects.css';
 const Projects = ({ title, id, cardNum }) => {
 	const [isModalOpen, openTheModal] = useState(false);
 	const [keyNum, modalNo] = useState(null);
-	
+
 	const modalHandler = (index) => {
 		modalNo(index);
 		openTheModal(true);
@@ -19,37 +19,37 @@ const Projects = ({ title, id, cardNum }) => {
 
 	return (
 		<CustomCard3 id={id} cardNum={cardNum} title={title}>
-				<h3 className="projectSubtitle">
-					On a side note, be sure to <span className="projectSideNote">run the backend server links (if provided) first</span>
-					{` `}before running the frontend project, in case you're checking them out.
+			<h3 className="projectSubtitle">
+				On a side note, be sure to <span className="projectSideNote">run the backend server links (if provided) first</span>
+				{` `}before running the frontend project, in case you're checking them out.
 				</h3>
-				<div className="projectsPillParent">
+			<div className="projectsPillParent">
 				{
-					projectData.map((el, index)=>{
+					projectData.map((el, index) => {
 						return (
 							<div className="projectsPillMother"
-								key={index} 
+								key={index}
 								title={title}
-								onClick={()=>modalHandler(index)}
+								onClick={() => modalHandler(index)}
 								text={'adfad'}>
-								<img 
-									src={el.imageUrl}  
-									alt="project-name" 
-									className={index!==6? `projectsImage` : 'mobileImage'} />
+								<img
+									src={el.imageUrl}
+									alt="project-name"
+									className={index !== 6 ? `projectsImage` : 'mobileImage'} />
 								<span className="projectsPill">{el.projectName}</span>
 							</div>
 						)
 					})
 				}
-				{	
+				{
 					isModalOpen &&
-						<Modal>
-							{
-								projectData.map((el, index)=> {
-									let modal = '';
-									if(index===keyNum){
+					<Modal>
+						{
+							projectData.map((el, index) => {
+								let modal = '';
+								if (index === keyNum) {
 									return (
-										modal = 
+										modal =
 										<RemoveScroll removeScrollBar={false} key={index} className="project-modal">
 											<article className="responsive">
 												<main className="main">
@@ -63,46 +63,47 @@ const Projects = ({ title, id, cardNum }) => {
 														<div className="modalRow3">
 															{
 																el.siteLink &&
-																<div className="modalRow3LinkLogoWrapper" onClick={()=>window.open(el.siteLink)}>
+																<div className="modalRow3LinkLogoWrapper" onClick={() => window.open(el.siteLink)}>
 																	<span className="modalRow3SpanLink">View Site</span>
 																	<img width="auto" height="24px" src={LinkIcon} alt="GitHub" />
 																</div>
 															}
 															{
 																el.gitHubLink &&
-																<div className="modalRow3LinkLogoWrapper" onClick={()=>window.open(el.gitHubLink)}>
+																<div className="modalRow3LinkLogoWrapper" onClick={() => window.open(el.gitHubLink)}>
 																	<span className="modalRow3SpanLink">GitHub Repo</span>
 																	<img width="auto" height="28px" src={GitLogo} alt="GitHub" />
 																</div>
 															}
 															{
-																el.siteBackendLink && 
-																	<div className="modalRow3LinkLogoWrapper" onClick={()=>window.open(el.siteBackendLink)}>
-																		<span className="modalRow3SpanLink">Backend Site</span>
-																		<img width="auto" height="24px" src={LinkIcon} alt="GitHub" />
-																	</div>
+																el.siteBackendLink &&
+																<div className="modalRow3LinkLogoWrapper" onClick={() => window.open(el.siteBackendLink)}>
+																	<span className="modalRow3SpanLink">Backend Site</span>
+																	<img width="auto" height="24px" src={LinkIcon} alt="GitHub" />
+																</div>
 															}
 															{
 																el.gHBackendLink &&
-																	<div className="modalRow3LinkLogoWrapper" onClick={()=>window.open(el.gHBackendLink)}>
-																		<span className="modalRow3SpanLink">Backend Repo</span>
-																		<img width="auto" height="28px" src={GitLogo} alt="GitHub" />
-																	</div>
+																<div className="modalRow3LinkLogoWrapper" onClick={() => window.open(el.gHBackendLink)}>
+																	<span className="modalRow3SpanLink">Backend Repo</span>
+																	<img width="auto" height="28px" src={GitLogo} alt="GitHub" />
+																</div>
 															}
 														</div>
 													</div>
 												</main>
-												<div className="modal-close" onClick={()=>openTheModal(false)}>&times;</div>
+												<div className="modal-close" onClick={() => openTheModal(false)}>&times;</div>
 											</article>
-										
+
 										</RemoveScroll>
-									)}
-									return modal
-								})
-							}
-						</Modal>
+									)
+								}
+								return modal
+							})
+						}
+					</Modal>
 				}
-				</div>
+			</div>
 			<ButtonInCard nextCardName='contact' bgColor='pink' />
 		</CustomCard3>
 	);
