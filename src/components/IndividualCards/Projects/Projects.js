@@ -50,16 +50,16 @@ const Projects = ({ title, id, cardNum }) => {
 								if (index === keyNum) {
 									return (
 										modal =
-										<RemoveScroll removeScrollBar={false} key={index} className="project-modal">
+										<div key={index} className="project-modal">
 											<article className="responsive">
 												<main className="main">
 													<div className="modalGrid">
 														<div className="modalRow1">
 															{el.projectName}
 														</div>
-														<div className="modalRow2">
+														<RemoveScroll removeScrollBar={false} className="modalRow2">
 															{el.description}
-														</div>
+														</RemoveScroll>
 														<div className="modalRow3">
 															{
 																el.siteLink &&
@@ -95,7 +95,7 @@ const Projects = ({ title, id, cardNum }) => {
 												<div className="modal-close" onClick={() => openTheModal(false)}>&times;</div>
 											</article>
 
-										</RemoveScroll>
+										</div>
 									)
 								}
 								return modal
