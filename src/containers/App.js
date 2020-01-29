@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Navigation from '../components/Navigation/Navigation';
-import RoleSwitcher from '../components/RoleSwitcher/RoleSwitcher';
 import Banner from '../components/Banner/Banner';
 import CardList from '../components/CardList';
 import Footer from '../components/Footer/Footer';
@@ -91,7 +90,6 @@ class App extends Component {
           toggleFunc={this.toggleFunc} />
 
         <div className="AppDiv">
-          <RoleSwitcher />
           <Banner scrollTo={this.scrollTo} />
           <div className="cardListParent">
             <CardList scrollTo={this.scrollTo} />
