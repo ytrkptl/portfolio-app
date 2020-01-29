@@ -16,30 +16,15 @@ export const projectData = [
 		gitHubLink: 'https://github.com/ytrkptl/face-rec-app-1',
 		imageUrl: `https://res.cloudinary.com/dun1b4fpw/image/upload/f_auto,q_auto,w_auto/v1574951670/portfolioapp/face.png`,
 		description: `A face recognition app that uses the Clarifai API to 
-		detect multiple faces within the photo url's you upload to it. It allows
+		detect multiple faces within the photos you upload to it. You can use
+		several options to upload photos or copy-paste a url instead. It allows
 		you to register or sign-in, and keeps track of how many photos 
 		you've uploaded. It also displays an emoji based on that number.
 		The project incldues both frontend and backend code in the same repository. 
 		Frontend is made using React. The backend uses Clarifai API, AWS Lambda using Serverless,
-		PostgreSQL, Docker, bcrypt for authentication, and JWT tokens
+		PostgreSQL, bcrypt for authentication, and JWT tokens
 		for session manangment along with Redis.`
 	},
-	// { 
-	// 	projectName: `Face Recognition App`,
-	// 	siteLink: 'https://new-face-rec-1.herokuapp.com/', 
-	// 	gitHubLink: 'https://github.com/ytrkptl/new-face-rec-1',
-	// 	siteBackendLink: `https://new-face-rec-1-api.herokuapp.com/`,
-	// 	gHBackendLink: `https://github.com/ytrkptl/new-face-rec-1-api`,
-	// 	imageUrl: `https://res.cloudinary.com/dun1b4fpw/image/upload/f_auto,q_auto,w_auto/v1574951670/portfolioapp/face.png`,
-	// 	description: `A face recognition app that uses the Clarifai API to 
-	// 	detect multiple faces within the photo url's you upload to it. It allows
-	// 	you to register or sign-in, and keeps track of how many photos 
-	// 	you've uploaded. It also displays an emoji based on that number.
-	// 	The tech involves separate frontend and backend code. Frontend is 
-	// 	made using React. The backend uses Clarifai API, AWS Lambda using Serverless,
-	// 	PostgreSQL, Docker, bcrypt for authentication, and JWT tokens
-	// 	for session manangment along with Redis.`
-	// },
 	{
 		projectName: `Airtable Gatsby Blog`,
 		siteLink: 'https://yatrik-blog.netlify.com/',

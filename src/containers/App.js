@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Navigation from '../components/Navigation/Navigation';
+import RoleSwitcher from '../components/RoleSwitcher/RoleSwitcher';
 import Banner from '../components/Banner/Banner';
 import CardList from '../components/CardList';
 import Footer from '../components/Footer/Footer';
@@ -16,7 +17,7 @@ export const scrollTo = hashName => {
   let parentRect = document.body.getBoundingClientRect();
   let element = document.getElementById(hashName);
   let rect = element.getBoundingClientRect();
-  let offset   = rect.top - parentRect.top - 20;
+  let offset = rect.top - parentRect.top + 20;
   window.scrollTo(0, offset);
 }
 
@@ -42,7 +43,7 @@ class App extends Component {
   // when the user scrolls the the very bottom of the page
   // so it doesn't appear over the footer.
   checkIfScrollIsAtBottom = () => {
-    if(window.scrollY + window.innerHeight >= (document.documentElement.scrollHeight - 60)) {
+    if (window.scrollY + window.innerHeight >= (document.documentElement.scrollHeight - 60)) {
       document.getElementById("floatingBtn").style.bottom = "66px";
     } else {
       document.getElementById("floatingBtn").style.bottom = "30px";
@@ -67,10 +68,10 @@ class App extends Component {
     let overlay = document.getElementById('overlay-content');
     let overlayHeight = overlay.clientHeight;
     let toggler = document.getElementById('hamburgerRef');
-    if(overlayHeight!==0){
+    if (overlayHeight !== 0) {
       toggler.click();
     }
-    window.scrollTo(0,0);
+    window.scrollTo(0, 0);
   }
 
   // use this function to scroll to specified hashname from 
@@ -88,17 +89,19 @@ class App extends Component {
           scrollToFromMenu={this.scrollToFromMenu}
           scrollToTop={this.scrollToTop}
           toggleFunc={this.toggleFunc} />
+
         <div className="AppDiv">
-          <Banner scrollTo={this.scrollTo}/>
+          <RoleSwitcher />
+          <Banner scrollTo={this.scrollTo} />
           <div className="cardListParent">
-              <CardList scrollTo={this.scrollTo}/>
+            <CardList scrollTo={this.scrollTo} />
           </div>
-          <Footer /> 
+          <Footer />
         </div>
-        <div  id="floatingBtn" onClick={this.scrollToTop}>
+        <div id="floatingBtn" onClick={this.scrollToTop}>
           <img id="arrow"
-              src={arrow} 
-              alt="move to top"/>
+            src={arrow}
+            alt="move to top" />
         </div>
       </div>
     );
@@ -106,5 +109,3 @@ class App extends Component {
 }
 
 export default App;
-
-
