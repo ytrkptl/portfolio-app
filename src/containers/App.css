@@ -2,7 +2,7 @@
   background-color: #e0e0e0;
 }
 .AppDiv{
-  margin-top: 88px;
+  margin-top: 54px;
   padding-top: 10px; 
   background-color: #e0e0e0;
 }
@@ -11,7 +11,7 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  margin-top: 20px;
+  margin-top: 10px;
   margin-bottom: 20px;
   max-width: 960px;
   margin-left: auto;
