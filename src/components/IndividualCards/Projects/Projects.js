@@ -1,16 +1,25 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import CustomCard3 from '../../Card-wrapper/CustomCard3';
 import ButtonInCard from '../../Button-in-card/Button-in-card'
 import { projectData } from './ProjectData';
 import GitLogo from '../../../assets/GitHub-Mark-64px.png';
 import Modal from '../../Modal/Modal';
 import LinkIcon from '../../../assets/iconfinder-link.svg';
-import { RemoveScroll } from 'react-remove-scroll';
 import './Projects.css';
 
-const Projects = ({ title, id, cardNum }) => {
+const Projects = ({ title, id, cardNum, scrollTheRoot }) => {
 	const [isModalOpen, openTheModal] = useState(false);
 	const [keyNum, modalNo] = useState(null);
+
+	useEffect(() => {
+		if (isModalOpen) {
+			scrollTheRoot(true)
+		}
+		return () => {
+			scrollTheRoot(false)
+		};
+	}, [isModalOpen, scrollTheRoot])
+
 
 	const modalHandler = (index) => {
 		modalNo(index);
@@ -57,9 +66,9 @@ const Projects = ({ title, id, cardNum }) => {
 														<div className="modalRow1">
 															{el.projectName}
 														</div>
-														<RemoveScroll removeScrollBar={false} className="modalRow2">
+														<div className="modalRow2">
 															{el.description}
-														</RemoveScroll>
+														</div>
 														<div className="modalRow3">
 															{
 																el.siteLink &&

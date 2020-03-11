@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
+import React, { Component, createRef } from 'react';
 import Navigation from '../components/Navigation/Navigation';
 import Banner from '../components/Banner/Banner';
-import CardList from '../components/CardList';
+import CardList from '../components/CardList/CardList';
 import Footer from '../components/Footer/Footer';
 import arrow from '../assets/arrow2.png';
 import ReactGA from 'react-ga';
@@ -16,7 +16,7 @@ export const scrollTo = hashName => {
   let parentRect = document.body.getBoundingClientRect();
   let element = document.getElementById(hashName);
   let rect = element.getBoundingClientRect();
-  let offset = rect.top - parentRect.top + 20;
+  let offset = rect.top - parentRect.top - 20;
   window.scrollTo(0, offset);
 }
 
@@ -28,6 +28,7 @@ class App extends Component {
       route: 'home',
       hamburgerClicked: false
     }
+    this.rootDivRef = createRef();
   }
 
   componentDidMount() {
@@ -81,9 +82,17 @@ class App extends Component {
     scrollTo(hashName);
   }
 
+  // lock scrolling div with id="root" when the modal is open
+  scrollTheRoot = (lock) => {
+    console.log(lock)
+    if (lock) {
+      document.getElementsByClassName("AppDiv")[0].style.pointerEvents = "none"
+    }
+  }
+
   render() {
     return (
-      <div className="App" onScroll={this.scroll}>
+      <div className="App" ref={this.rootDivRef} onScroll={this.scroll}>
         <Navigation
           scrollToFromMenu={this.scrollToFromMenu}
           scrollToTop={this.scrollToTop}
@@ -92,7 +101,7 @@ class App extends Component {
         <div className="AppDiv">
           <Banner scrollTo={this.scrollTo} />
           <div className="cardListParent">
-            <CardList scrollTo={this.scrollTo} />
+            <CardList scrollTo={this.scrollTo} scrollTheRoot={this.scrollTheRoot} />
           </div>
           <Footer />
         </div>

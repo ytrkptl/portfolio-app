@@ -1,6 +1,6 @@
 .btnInsideCard {
 	text-align: center;
-	margin: 10px 10px 16px 10px ;
+	margin: 16px 10px 16px 10px ;
   padding: 8px;
 	height: 40px;
 	outline: none;
@@ -9,23 +9,18 @@
   font-size: 12px;
   font-weight: 600;
 	font-family: 'Maiandra GD', 'Roboto', sans-serif;
-	transition: all 0.2s ease-in-out;
+	transition: all 0.02s ease-in-out;
 	cursor: pointer;
+	width: 80px;
 }
 .btnInsideCard:hover {
 	outline: none;
 	box-shadow: 2px 2px 2px 0px black;
-	/* transform: scale(1.02); */
 }
 .btnInsideCard:active {
 	outline: none;
-	transform: translate(4px, 4px);
+	transform: translate(1px, 1px);
 }
 .btnInsideCard:focus {
 	outline: none;
 }
-/* .downArrow {
-	font-size: 20px;
-	margin-left: 6px;
-	padding-bottom: 4px;
-} */
