@@ -82,14 +82,6 @@ class App extends Component {
     scrollTo(hashName);
   }
 
-  // lock scrolling div with id="root" when the modal is open
-  scrollTheRoot = (lock) => {
-    console.log(lock)
-    if (lock) {
-      document.getElementsByClassName("AppDiv")[0].style.pointerEvents = "none"
-    }
-  }
-
   render() {
     return (
       <div className="App" ref={this.rootDivRef} onScroll={this.scroll}>
@@ -101,7 +93,7 @@ class App extends Component {
         <div className="AppDiv">
           <Banner scrollTo={this.scrollTo} />
           <div className="cardListParent">
-            <CardList scrollTo={this.scrollTo} scrollTheRoot={this.scrollTheRoot} />
+            <CardList scrollTo={this.scrollTo} />
           </div>
           <Footer />
         </div>

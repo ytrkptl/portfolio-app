@@ -1,28 +1,21 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import CustomCard3 from '../../Card-wrapper/CustomCard3';
 import ButtonInCard from '../../Button-in-card/Button-in-card'
 import { projectData } from './ProjectData';
 import GitLogo from '../../../assets/GitHub-Mark-64px.png';
 import Modal from '../../Modal/Modal';
+import { RemoveScroll } from 'react-remove-scroll';
 import LinkIcon from '../../../assets/iconfinder-link.svg';
 import './Projects.css';
 
 const Projects = ({ title, id, cardNum, scrollTheRoot }) => {
 	const [isModalOpen, openTheModal] = useState(false);
-	const [keyNum, modalNo] = useState(null);
+	const [modalId, setModalId] = useState(null)
 
-	useEffect(() => {
-		if (isModalOpen) {
-			scrollTheRoot(true)
-		}
-		return () => {
-			scrollTheRoot(false)
-		};
-	}, [isModalOpen, scrollTheRoot])
-
+	console.log(isModalOpen, modalId)
 
 	const modalHandler = (index) => {
-		modalNo(index);
+		setModalId(index);
 		openTheModal(true);
 	}
 
@@ -51,16 +44,14 @@ const Projects = ({ title, id, cardNum, scrollTheRoot }) => {
 					})
 				}
 				{
-					isModalOpen &&
-					<Modal>
-						{
-							projectData.map((el, index) => {
-								let modal = '';
-								if (index === keyNum) {
-									return (
-										modal =
-										<div key={index} className="project-modal">
-											<article className="responsive">
+					projectData.map((el, index) => {
+						if (index === modalId) {
+							return (
+								isModalOpen &&
+								<Modal key={index}>
+									<div className="project-modal">
+										<article className="responsive">
+											<RemoveScroll>
 												<main className="main">
 													<div className="modalGrid">
 														<div className="modalRow1">
@@ -101,16 +92,14 @@ const Projects = ({ title, id, cardNum, scrollTheRoot }) => {
 														</div>
 													</div>
 												</main>
-												<div className="modal-close" onClick={() => openTheModal(false)}>&times;</div>
-											</article>
-
-										</div>
-									)
-								}
-								return modal
-							})
+											</RemoveScroll>
+											<div className="modal-close" onClick={() => openTheModal(false)}>&times;</div>
+										</article>
+									</div>
+								</Modal>
+							)
 						}
-					</Modal>
+					})
 				}
 			</div>
 			<ButtonInCard nextCardName='contact' bgColor='pink' />
