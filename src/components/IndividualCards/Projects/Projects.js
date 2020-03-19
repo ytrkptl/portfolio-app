@@ -12,8 +12,6 @@ const Projects = ({ title, id, cardNum, scrollTheRoot }) => {
 	const [isModalOpen, openTheModal] = useState(false);
 	const [modalId, setModalId] = useState(null)
 
-	console.log(isModalOpen, modalId)
-
 	const modalHandler = (index) => {
 		setModalId(index);
 		openTheModal(true);
@@ -53,43 +51,41 @@ const Projects = ({ title, id, cardNum, scrollTheRoot }) => {
 										<article className="responsive">
 											<RemoveScroll>
 												<main className="main">
-													<div className="modalGrid">
-														<div className="modalRow1">
-															{el.projectName}
-														</div>
-														<div className="modalRow2">
-															{el.description}
-														</div>
-														<div className="modalRow3">
-															{
-																el.siteLink &&
-																<div className="modalRow3LinkLogoWrapper" onClick={() => window.open(el.siteLink)}>
-																	<span className="modalRow3SpanLink">View Site</span>
-																	<img width="auto" height="24px" src={LinkIcon} alt="GitHub" />
-																</div>
-															}
-															{
-																el.gitHubLink &&
-																<div className="modalRow3LinkLogoWrapper" onClick={() => window.open(el.gitHubLink)}>
-																	<span className="modalRow3SpanLink">GitHub Repo</span>
-																	<img width="auto" height="28px" src={GitLogo} alt="GitHub" />
-																</div>
-															}
-															{
-																el.siteBackendLink &&
-																<div className="modalRow3LinkLogoWrapper" onClick={() => window.open(el.siteBackendLink)}>
-																	<span className="modalRow3SpanLink">Backend Site</span>
-																	<img width="auto" height="24px" src={LinkIcon} alt="GitHub" />
-																</div>
-															}
-															{
-																el.gHBackendLink &&
-																<div className="modalRow3LinkLogoWrapper" onClick={() => window.open(el.gHBackendLink)}>
-																	<span className="modalRow3SpanLink">Backend Repo</span>
-																	<img width="auto" height="28px" src={GitLogo} alt="GitHub" />
-																</div>
-															}
-														</div>
+													<div className="modalRow1">
+														{el.projectName}
+													</div>
+													<div className="modalRow2">
+														{el.description}
+													</div>
+													<div className="modalRow3">
+														{
+															el.siteLink &&
+															<div className="modalRow3LinkLogoWrapper" onClick={() => window.open(el.siteLink)}>
+																<span className="modalRow3SpanLink">View Site</span>
+																<img width="auto" height="24px" src={LinkIcon} alt="GitHub" />
+															</div>
+														}
+														{
+															el.gitHubLink &&
+															<div className="modalRow3LinkLogoWrapper" onClick={() => window.open(el.gitHubLink)}>
+																<span className="modalRow3SpanLink">GitHub Repo</span>
+																<img width="auto" height="28px" src={GitLogo} alt="GitHub" />
+															</div>
+														}
+														{
+															el.siteBackendLink &&
+															<div className="modalRow3LinkLogoWrapper" onClick={() => window.open(el.siteBackendLink)}>
+																<span className="modalRow3SpanLink">Backend Site</span>
+																<img width="auto" height="24px" src={LinkIcon} alt="GitHub" />
+															</div>
+														}
+														{
+															el.gHBackendLink &&
+															<div className="modalRow3LinkLogoWrapper" onClick={() => window.open(el.gHBackendLink)}>
+																<span className="modalRow3SpanLink">Backend Repo</span>
+																<img width="auto" height="28px" src={GitLogo} alt="GitHub" />
+															</div>
+														}
 													</div>
 												</main>
 											</RemoveScroll>

@@ -92,16 +92,10 @@
 .main {
 	padding: 10px;
 	padding-bottom: 0;
-	overflow: hidden;
+	overflow: scroll;
 	height: 100%;
-	box-sizing: border-box;
-}
+	box-sizing: border-box;}
 
-.modalGrid {
-	display: grid;
-	grid-template-rows: 1fr 3fr auto;
-	box-sizing: border-box;
-}
 .modalRow1 {
 	display: inline-flex;
 	padding: 10px;
@@ -122,6 +116,7 @@
 	margin-bottom: 10px;
 	overflow-y: scroll;
 	scroll-behavior: smooth;
+	height: 200px;
 }
 .modalRow3 {
 	display: flex;
