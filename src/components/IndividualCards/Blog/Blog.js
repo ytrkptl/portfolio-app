@@ -16,7 +16,7 @@ const Blog = ({ title, id, cardNum }) => {
           Hashnode
         </a>
       </p>
-      <p className="blogPara1">Will be adding more this card soon</p>
+      <p className="blogPara1">Will be adding more to this card soon</p>
       <ButtonInCard nextCardName="teacher" bgColor="pink" />
     </CustomCard3>
   );
