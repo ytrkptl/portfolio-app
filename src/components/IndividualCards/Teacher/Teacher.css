@@ -1,0 +1,47 @@
+.teacherSubtitle {
+  margin: 20px 0px 10px 0px;
+}
+.teacherPillParent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: auto;
+  padding: 20px;
+  padding-bottom: 2%;
+  padding-top: 3%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  border-top: 1px solid black;
+}
+.teacherPill {
+  font-size: 16px;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 4px;
+  padding: 4px 10px;
+  height: auto;
+  overflow-wrap: break-word;
+  width: 100%;
+  text-align: left;
+}
+
+.teacherPillParent:nth-of-type(1) .teacherPill::before {
+  content: "✨";
+  margin-right: 10px;
+}
+
+.teacherPillParent:nth-of-type(2) .teacherPill::before {
+  content: "👉";
+  margin-right: 10px;
+}
+@media screen and (max-width: 750px) {
+  .teacherPillParent {
+    padding-left: 0;
+  }
+  .teacherPill {
+    padding-left: 0;
+  }
+}
