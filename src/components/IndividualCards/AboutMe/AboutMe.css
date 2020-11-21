@@ -1,6 +1,14 @@
 .aboutMePara1 {
-	text-align: left;
-	font-size: 18px ;
-	margin: 28px 0px 18px 0px;
-	padding: auto;
+  text-align: justify;
+  font-size: 18px;
+  margin: 28px 0px 18px 0px;
+  padding: auto;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.readMore {
+  color: rgb(31, 136, 255);
+  text-decoration: underline;
+  cursor: pointer;
 }
