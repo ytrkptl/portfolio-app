@@ -10,7 +10,7 @@ const AboutMe = ({ title, id, cardNum }) => {
     <CustomCard3 id={id} cardNum={cardNum} title={title}>
       <p className="aboutMePara1">
         I am a math teacher from Virginia, United States. In my free time, I
-        love to code and work on developing apps and websites. I also like to
+        love to program and work on developing apps and websites. I also like to
         create lessons and sell them online for teachers to buy.
       </p>
       <div>
@@ -38,7 +38,7 @@ const AboutMe = ({ title, id, cardNum }) => {
               official jobs though. Hence, over the next four years, I continued
               to teach as my primary job and dived deeper into programming in my
               free time. I still did not feel quite ready for developing though.
-              Fortunately, however, in December of 2018, I applied and gained a
+              Fortunately however, in December of 2018, I applied and gained a
               scholarship from Google in partnership with Udacity. It was called
               Grow with Google Challenge Scholarship and allowed me to select a
               field of learning. At that time, I chose to learn Android
@@ -49,20 +49,20 @@ const AboutMe = ({ title, id, cardNum }) => {
               tools, languages, frameworks, Integrated Development Environments,
               etc. It prepared me to build real projects from scratch all the
               way up to learning advanced concepts such as working with
-              databases, APIs, etc. To supplement this, I took courses from
+              databases, API’s, etc. To supplement this, I took courses from
               Udemy, which exposed me to building games in Android, implementing
-              authentication, syncing data in real-time, storing data in the
-              cloud, setting up SSH, and so much more.
+              authentication, syncing data in real time, storing data in cloud,
+              setting up SSH, and so much more.
             </p>
             <p className="aboutMePara1">
-              The skills gained above did not feel enough, so I thought of
+              The skills gained above didn not feel enough, so I thought of
               taking a different route. Earlier in 2019, I started learning web
-              development by taking some online courses, and I cannot imagine
-              how much I have learned ever since. Now, I’ve experienced and am
-              pretty good at setting up and running servers, building REST APIs,
-              using Docker, Redis, setting up authentication, following best
-              practices for storing data, understanding Data Structures and
-              Algorithms (currently learning more about it), using React, Redux,
+              development online, and I cannot imagine how much I have learned
+              after taking these courses. Now, I’ve experienced and am pretty
+              good at setting up and running servers, building REST APIs, using
+              Docker, Redis, setting up authentication, following best practices
+              for storing data, understanding Data Structures and Algorithms
+              (currently learning more about it), using React, Redux,
               Redux-Saga, SASS, styled-components, optimizing apps using
               code-splitting, lazy loading, dynamic imports, storing data in
               POSTGRES, Firebase Storage, MongoDB, etc.
@@ -79,7 +79,7 @@ const AboutMe = ({ title, id, cardNum }) => {
               further courses with them.
             </p>
             <p className="aboutMePara1">
-              I hope this clarifies and provides enough information about my
+              I hope clarifies and provides enough information about my
               background as it pertains to programming.
             </p>
           </>
