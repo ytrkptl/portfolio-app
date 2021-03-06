@@ -7,13 +7,13 @@ const Blog = ({ title, id, cardNum }) => {
   return (
     <CustomCard3 id={id} cardNum={cardNum} title={title}>
       <p className="blogPara1">
-        For now, you can read my blogs on either{" "}
+        For now, you can read my blogs on either the{" "}
         <a
-          href="https://yatrik.hashnode.dev/"
+          href="https://blog.yatrik.dev/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Hashnode
+          Hashnode Powered Blog
         </a>{" "}
         or{" "}
         <a
