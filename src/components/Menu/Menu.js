@@ -21,19 +21,25 @@ const Menu = ({ scrollToFromMenu }) => {
   const closeNav = () => {
     menuRef.current.style.height = "0%";
   };
+  const handleClick = (event, id) => {
+    event.preventDefault();
+    scrollToFromMenu(id);
+  };
+
   return (
     <div id="menu">
       <div ref={menuRef} id="myNav" className="overlay">
         <div className="overlay-content" id="overlay-content">
           {Data.map((el) => (
-            <button
+            <a
               key={el.id}
               id={`${el.id}Btn2`}
-              className="col3Btns grow"
-              onClick={() => scrollToFromMenu(el.id)}
+              className="col3MenuBtns grow"
+              href="/"
+              onClick={(e) => handleClick(e, el.id)}
             >
               {el.name}
-            </button>
+            </a>
           ))}
         </div>
       </div>

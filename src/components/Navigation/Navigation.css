@@ -45,6 +45,7 @@
   font-size: 34px;
   padding: 0px;
   cursor: pointer;
+  text-decoration: none;
 }
 /*refers to all buttons in #col3*/
 .col3Btns {
@@ -56,6 +57,7 @@
   color: white;
   font-size: 16px;
   cursor: pointer;
+  text-decoration: none;
   /* margin-left: 10px; */
   /* margin-right: 10px; */
 }
@@ -67,6 +69,32 @@
   outline: none;
 }
 
+/*refers to all buttons in #col3*/
+.col3MenuBtns {
+  white-space: nowrap;
+  box-shadow: none;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 28px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: 0px;
+  color: white;
+  margin: 10px 10px;
+  overflow: hidden;
+  display: block;
+  transition: 0.3s;
+  /* margin-left: 10px; */
+  /* margin-right: 10px; */
+}
+.col3MenuBtns:hover {
+  color: gold;
+}
+.col3MenuBtns:focus {
+  color: gold;
+  outline: none;
+}
 /*use this to zoom in on items upon hovering
 use with transform property below*/
 .grow {

@@ -18,35 +18,44 @@ class Navigation extends Component {
     }
   }
 
+  handleClick(event, fnName, id = null) {
+    event.preventDefault();
+    fnName === "scrollToTop"
+      ? this.props.scrollToTop()
+      : this.props.scrollToFromMenu(id);
+  }
+
   render() {
     return (
-      <div id="headerMainDiv">
+      <nav id="headerMainDiv">
         <div id="col1">
           <Logo />
         </div>
         <div id="col2">
-          <button
+          <a
             id="titleBtn"
             className="grow"
-            onClick={() => this.props.scrollToTop()}
+            href="/"
+            onClick={(e) => this.handleClick(e, "scrollToTop")}
           >
             Yatrik's Portfolio
-          </button>
+          </a>
         </div>
         <div id="col3">
           {Data.map((el) => (
-            <button
+            <a
               key={el.id}
               id={`${el.id}Btn`}
               className="col3Btns grow"
-              onClick={() => this.props.scrollToFromMenu(el.id)}
+              href="/"
+              onClick={(e) => this.handleClick(e, "scrollToFromMenu", el.id)}
             >
               {el.name}
-            </button>
+            </a>
           ))}
           <Menu scrollToFromMenu={this.props.scrollToFromMenu} />
         </div>
-      </div>
+      </nav>
     );
   }
 }
