@@ -54,7 +54,7 @@ export const projectData = [
     projectName: `Android App`,
     projectUrl: ``,
     gitHubLink: `https://github.com/ytrkptl/tazewell-tour-guide`,
-    imageUrl: `https://res.cloudinary.com/dun1b4fpw/image/upload/f_auto,q_auto,w_auto/v1574951670/portfolioapp/tazewell.png`,
+    imageUrl: `https://res.cloudinary.com/dun1b4fpw/image/upload/f_auto,q_auto,w_auto/v1574951670/portfolioapp/tazewell-resized.png`,
     description: `As part of my nanodegree from Udacity, I built this using
 		Android Studio to practice my Android skills. This is about 1.5 to 2 years ago. It uses XML and Java as the primary 
 		languages. It isn't published anywhere but is avaiable to see on my device if requested.
