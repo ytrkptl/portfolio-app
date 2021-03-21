@@ -70,7 +70,7 @@
 }
 
 /*refers to all buttons in #col3*/
-.col3MenuBtns {
+.col3MenuLinks {
   white-space: nowrap;
   box-shadow: none;
   cursor: pointer;
@@ -88,10 +88,10 @@
   /* margin-left: 10px; */
   /* margin-right: 10px; */
 }
-.col3MenuBtns:hover {
+.col3MenuLinks:hover {
   color: gold;
 }
-.col3MenuBtns:focus {
+.col3MenuLinks:focus {
   color: gold;
   outline: none;
 }

@@ -34,7 +34,7 @@ const Menu = ({ scrollToFromMenu }) => {
             <a
               key={el.id}
               id={`${el.id}Btn2`}
-              className="col3MenuBtns grow"
+              className="col3MenuLinks grow"
               href="/"
               onClick={(e) => handleClick(e, el.id)}
             >
