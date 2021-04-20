@@ -24,7 +24,7 @@ const Banner = () => {
           src="https://res.cloudinary.com/dun1b4fpw/image/upload/c_limit,f_auto,q_auto,w_600/v1574951668/portfolioapp/teacherToDev.png"
           className="teacherToDevImage"
         />
-        <ButtonInCard nextCardName="aboutme" />
+        <ButtonInCard nextCardIdAndUrl="about-me" />
       </div>
     </div>
   );

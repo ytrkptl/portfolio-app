@@ -61,7 +61,7 @@ const Teacher = ({ title, id, cardNum }) => {
           </a>
         </p>
       </div>
-      <ButtonInCard nextCardName="contact" bgColor="pink" />
+      <ButtonInCard nextCardIdAndUrl="contact" bgColor="pink" />
     </CustomCard3>
   );
 };

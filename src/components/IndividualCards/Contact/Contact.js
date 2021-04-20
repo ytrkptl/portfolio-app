@@ -52,7 +52,7 @@ const Contact = ({ title, id, cardNum }) => {
 					</div>
 				</form>
 			</div>
-			<ButtonInCard nextCardName='credits' bgColor='pink' />
+			<ButtonInCard nextCardIdAndUrl="credits" bgColor='pink' />
 		</CustomCard3>
 	);
 }

@@ -86,7 +86,7 @@ const AboutMe = ({ title, id, cardNum }) => {
         )}
       </div>
 
-      <ButtonInCard nextCardName="projects" bgColor="pink" />
+      <ButtonInCard nextCardIdAndUrl="projects" bgColor="pink" />
     </CustomCard3>
   );
 };

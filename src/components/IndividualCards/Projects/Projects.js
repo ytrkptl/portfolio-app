@@ -138,7 +138,7 @@ const Projects = ({ title, id, cardNum, scrollTheRoot }) => {
           );
         })}
       </div>
-      <ButtonInCard nextCardName="developer" bgColor="pink" />
+      <ButtonInCard nextCardIdAndUrl="developer" bgColor="pink" />
     </CustomCard3>
   );
 };
