@@ -1,19 +1,21 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { scrollTo } from '../../containers/App';
 
 import './Button-in-card.css';
 
-const ButtonInCard = ({nextCardName, bgColor}) => {
+const ButtonInCard = ({nextCardIdAndUrl, bgColor}) => {
 	return (
-    <button 
-      className="btnInsideCard" 
-      style={{
-        backgroundColor: `${bgColor}`,
-      }}
-      onClick={()=>scrollTo(`${nextCardName}`)}
-    >
-      NEXT 
-    </button>
+    <Link to={`/${nextCardIdAndUrl}`} onClick={()=>scrollTo(`${nextCardIdAndUrl}`)}>
+      <button 
+        className="btnInsideCard" 
+        style={{
+          backgroundColor: `${bgColor}`,
+        }}
+      >
+        NEXT 
+      </button>
+    </Link>
 	);
 }
 
