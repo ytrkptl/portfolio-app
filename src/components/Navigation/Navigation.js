@@ -3,6 +3,7 @@ import Logo from "../Logo/Logo";
 import Menu from "../Menu/Menu";
 import { Data } from "../CardList/Data";
 import "./Navigation.css";
+import { Link } from "react-router-dom";
 
 class Navigation extends Component {
   constructor(props) {
@@ -18,8 +19,7 @@ class Navigation extends Component {
     }
   }
 
-  handleClick(event, fnName, id = null) {
-    event.preventDefault();
+  handleClick(fnName, id = null) {
     fnName === "scrollToTop"
       ? this.props.scrollToTop()
       : this.props.scrollToFromMenu(id);
@@ -32,26 +32,26 @@ class Navigation extends Component {
           <Logo />
         </div>
         <div id="col2">
-          <a
+          <Link
             id="titleBtn"
             className="grow"
-            href="/"
-            onClick={(e) => this.handleClick(e, "scrollToTop")}
+            to="/"
+            onClick={() => this.handleClick("scrollToTop", null)}
           >
             Yatrik's Portfolio
-          </a>
+          </Link>
         </div>
         <div id="col3">
           {Data.map((el) => (
-            <a
+            <Link
               key={el.id}
               id={`${el.id}Btn`}
               className="col3Btns grow"
-              href="/"
-              onClick={(e) => this.handleClick(e, "scrollToFromMenu", el.id)}
+              to={`/${el.url}`}
+              onClick={() => this.handleClick("scrollToFromMenu", el.id)}
             >
               {el.name}
-            </a>
+            </Link>
           ))}
           <Menu scrollToFromMenu={this.props.scrollToFromMenu} />
         </div>
@@ -59,4 +59,4 @@ class Navigation extends Component {
     );
   }
 }
-export default Navigation;
+export default Navigation
