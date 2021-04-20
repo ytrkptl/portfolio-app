@@ -1,0 +1,83 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+.blog-list-h2 {
+  -webkit-margin-before: 0em;
+  margin-block-start: 0em;
+  -webkit-margin-after: 0em;
+  margin-block-end: 0em;
+  margin: auto;
+  margin-top: 0.8rem;
+  margin-bottom: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.blog-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.blog-list-item {
+  /* border-bottom: 1px solid #74b9ff; */
+  line-height: 1.5em;
+  text-decoration: none;
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-top: 0.5px;
+  margin-bottom: 10px;
+}
+
+.blog-list-item h3 {
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+.blog-list-item h4 {
+  margin: 0;
+  margin-bottom: 1rem;
+  color: gray;
+}
+
+.blog-list-item p {
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+.blog-list-item span {
+  display: block;
+  margin-right: 1rem;
+  font-weight: bold;
+}
+
+.blog-list-item:hover h3,
+.blog-list-item:hover span {
+  color: blue;
+}
