@@ -1,0 +1,70 @@
+.blogInfoSubtitle {
+  margin: 20px 0px 10px 0px;
+}
+
+.blogInfoPara1 {
+  text-align: center;
+  font-size: 18px;
+  margin: 28px 0px 18px 0px;
+  padding: auto;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.blog-card-link-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 18px;
+}
+
+.blog-card-link-div a,
+.blog-card-link-div span {
+  margin-top: 10px;
+}
+
+.blogInfoLinkToBlog {
+  display: block;
+  margin-top: 1em;
+}
+
+.blogInfoPara1 a {
+  display: block;
+  margin-top: 1em;
+}
+
+.blog-cta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding: 1em;
+  border-radius: 120px;
+  color: white;
+  width: 140px;
+  height: 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  background-color: #007bff;
+  box-shadow: 0 6px #003f83;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Maiandra GD", "Nunito", "Roboto", sans-serif;
+  text-align: center;
+  text-decoration: none;
+}
+
+.blog-cta:hover {
+  box-shadow: 0 4.5px rgb(0, 47, 100);
+  transform: translateY(2px);
+}
+
+.blog-cta:active {
+  box-shadow: 0 3px rgb(0, 47, 100);
+  transform: translateY(4px);
+}
