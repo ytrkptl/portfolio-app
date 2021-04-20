@@ -1,7 +1,7 @@
 import React from "react";
 import AboutMe from "../IndividualCards/AboutMe/AboutMe";
 import Developer from "../IndividualCards/Developer/Developer";
-import Blog from "../IndividualCards/Blog/Blog";
+import Blog from "../IndividualCards/BlogInfo/BlogInfo";
 import Teacher from "../IndividualCards/Teacher/Teacher";
 import Projects from "../IndividualCards/Projects/Projects";
 import Contact from "../IndividualCards/Contact/Contact";
@@ -32,7 +32,7 @@ const CardList = ({ scrollTheRoot }) => {
       );
     } else if (i === 3) {
       itemsArr.push(
-        <Blog title={Data[i].name} key={i} id={Data[i].id} cardNum={i} />
+        <Blog title={`${Data[i].name} Info`} key={i} id={Data[i].id} cardNum={i} />
       );
     } else if (i === 4) {
       itemsArr.push(
