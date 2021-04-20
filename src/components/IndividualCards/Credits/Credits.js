@@ -3,7 +3,8 @@ import CustomCard3 from '../../Card-wrapper/CustomCard3';
 
 import './Credits.css';
 
-let credits = [	
+let credits = [
+	'ZeroToMastery Academy',
 	'Udemy', 
 	'Udacity', 
 	'W3Schools', 
