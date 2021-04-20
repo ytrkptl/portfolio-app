@@ -1,7 +1,9 @@
 import React, { Component, createRef } from "react";
+import { Route, Switch, withRouter } from "react-router-dom";
 import Navigation from "../components/Navigation/Navigation";
 import Banner from "../components/Banner/Banner";
 import CardList from "../components/CardList/CardList";
+import MdxContainer from "./MdxContainer";
 import Footer from "../components/Footer/Footer";
 import arrow from "../assets/arrow2.png";
 import ReactGA from "react-ga";
@@ -84,6 +86,12 @@ class App extends Component {
   scrollToFromMenu = (hashName) => {
     let toggler = document.getElementById("hamburgerRef");
     toggler.click();
+    let regexStr = /blog/g
+    if(regexStr.test(window.location.href)) {
+      this.props.history.push(`/`)
+      setTimeout(()=> scrollTo(hashName), 500)
+      return
+    }
     scrollTo(hashName);
   };
 
@@ -112,13 +120,23 @@ class App extends Component {
           toggleFunc={this.toggleFunc}
         />
         <div className="AppDiv">
-          <Banner scrollTo={this.scrollTo} animState={this.state.animState} />
-          <div className="cardListParent">
-            <CardList
-              scrollTo={this.scrollTo}
-              currentRole={this.state.currentRole}
-            />
-          </div>
+          <Switch>
+            <Route path="/blog">
+              <MdxContainer 
+                scrollToFromMenu={this.scrollToFromMenu}
+                scrollToTop={this.scrollToTop} 
+              />
+            </Route>
+            <Route path="/">
+              <Banner scrollTo={this.scrollTo} animState={this.state.animState} />
+              <div className="cardListParent">
+                <CardList
+                  scrollTo={this.scrollTo}
+                  currentRole={this.state.currentRole}
+                />
+              </div>
+            </Route>
+          </Switch>
           <Footer />
         </div>
         <div id="floatingBtn" onClick={this.scrollToTop}>
@@ -129,4 +147,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default withRouter(App);
