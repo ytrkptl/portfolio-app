@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Menu.css";
 import "./Hamburger.css";
 import { Data } from "../CardList/Data";
@@ -21,25 +22,21 @@ const Menu = ({ scrollToFromMenu }) => {
   const closeNav = () => {
     menuRef.current.style.height = "0%";
   };
-  const handleClick = (event, id) => {
-    event.preventDefault();
-    scrollToFromMenu(id);
-  };
 
   return (
     <div id="menu">
       <div ref={menuRef} id="myNav" className="overlay">
         <div className="overlay-content" id="overlay-content">
           {Data.map((el) => (
-            <a
+            <Link
               key={el.id}
               id={`${el.id}Btn2`}
               className="col3MenuLinks grow"
-              href="/"
-              onClick={(e) => handleClick(e, el.id)}
+              to={`/${el.url}`}
+              onClick={() => scrollToFromMenu(el.id)}
             >
               {el.name}
-            </a>
+            </Link>
           ))}
         </div>
       </div>
