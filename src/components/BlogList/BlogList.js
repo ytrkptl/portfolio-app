@@ -1,4 +1,5 @@
 import React from 'react'
+import { BlogListData } from "./BlogListData.js";
 import { Link } from 'react-router-dom';
 import "./BlogList.css";
 
@@ -7,30 +8,19 @@ const BlogList = () => {
     <>
       <h2 className="blog-list-h2">Blog</h2>
       <div className="blog-list">
-        <article className="blog-list-item">
-          <Link className="blog-list-item" to="/blog/1">
-            <h3>Article Title</h3>
-            <h4>Article Subtitle</h4>
-            <p>Adipisicing sunt duis ex sunt sit esse esse. Tempor enim laboris aute ex magna. Do culpa nostrud ipsum culpa esse id id dolor cillum cillum esse laborum dolore amet. Ullamco cupidatat cupidatat excepteur velit commodo dolore commodo veli</p>
-            <span>Read &#10141;</span>
-          </Link>
-        </article>
-        <article className="blog-list-item">
-          <Link className="blog-list-item" to="/blog/1">
-            <h3>Article Title</h3>
-            <h4>Article Subtitle</h4>
-            <p>Adipisicing sunt duis ex sunt sit esse esse. Tempor enim laboris aute ex magna. Do culpa nostrud ipsum culpa esse id id dolor cillum cillum esse laborum dolore amet. Ullamco cupidatat cupidatat excepteur velit commodo dolore commodo veli</p>
-            <span>Read &#10141;</span>
-          </Link>
-        </article>
-        <article className="blog-list-item">
-          <Link className="blog-list-item" to="/blog/1">
-            <h3>Article Title</h3>
-            <h4>Article Subtitle</h4>
-            <p>Adipisicing sunt duis ex sunt sit esse esse. Tempor enim laboris aute ex magna. Do culpa nostrud ipsum culpa esse id id dolor cillum cillum esse laborum dolore amet. Ullamco cupidatat cupidatat excepteur velit commodo dolore commodo veli</p>
-            <span>Read &#10141;</span>
-          </Link>
-        </article>
+        {
+          // don't use index as key
+          BlogListData.map((el) => 
+            <article className="blog-list-item" key={`${el.title}`}>
+              <Link className="blog-list-item" to={`/blog/${el.url}`}>
+                <h3>{el.title}</h3>
+                <h4>{el.subtitle}</h4>
+                <p>{el.excerpt}</p>
+                <span>Read &#10141;</span>
+              </Link>
+            </article>
+          )
+        }
       </div>
     </>
    
