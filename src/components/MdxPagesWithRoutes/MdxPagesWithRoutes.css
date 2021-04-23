@@ -1,0 +1,11 @@
+.blog-mdx-content {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+@media screen and (max-width: 600px) {
+  .blog-mdx-content {
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+}
