@@ -1,16 +1,17 @@
 import React from "react"
-/* eslint-disable import/no-webpack-loader-syntax */
-import UglySweater from '!babel-loader!@mdx-js/loader!../mdx-pages/ugly-sweater/ugly-sweater.mdx'
-import "./MdxContainer.css"
-import { Switch, Route, Link, useHistory } from "react-router-dom"
 import BlogList from "../components/BlogList/BlogList";
+import MdxPagesWithRoutes from "../components/MdxPagesWithRoutes/MdxPagesWithRoutes"
+import BlogHeaderWithRoutes from "../components/BlogHeaderWithRoutes/BlogHeaderWithRoutes";
 import { scrollTo } from "./App";
+import { Switch, Route, Link, useHistory } from "react-router-dom"
+import "./MdxContainer.css"
 
 const BackLink = () => <span className="back-link">&#10141;</span>
 
-const MdxContainer = () => {
+const BackLinkSwitchFunction = ({ containerType }) => {
 
   let history = useHistory()
+
   const handleGoingBack = (e) => {
     e.preventDefault();
     setTimeout(()=> {
@@ -19,21 +20,29 @@ const MdxContainer = () => {
     history.push("/blog-info")
   }
 
+  switch (containerType) {
+    case 2:
+      return <Link to="/blog"><BackLink />Back</Link>
+    default:
+      return <Link to="/blog-info" onClick={(e)=>handleGoingBack(e)}><BackLink />Back</Link>
+  }
+}
+
+const BackLinkContainer = ({ containerType }) => <div className="back-link-container"><BackLinkSwitchFunction containerType={containerType}/></div>
+
+const MdxContainer = () => {
   return (
     <div className="mdx-parent">
       <div className="mdx-card-wrapper">
         <Switch>
           <Route exact path="/blog">
-            <div className="back-link-container">
-              <Link to="/blog-info" onClick={(e)=>handleGoingBack(e)}><BackLink />Back</Link>
-            </div>
-            <BlogList />
+            <BackLinkContainer />
+            <BlogList  />
           </Route>
-          <Route exact path="/blog/1">
-            <div className="back-link-container">
-              <Link to="/blog"><BackLink />Back</Link>
-            </div>
-            <UglySweater />
+          <Route exact path="/blog/*">
+            <BackLinkContainer containerType={2} />
+            <BlogHeaderWithRoutes />
+            <MdxPagesWithRoutes />
           </Route>
         </Switch>
       </div>

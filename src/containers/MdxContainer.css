@@ -28,7 +28,7 @@
   min-height: calc(100vh - 185px);
   height: 90%;
   width: 100%;
-  padding: 2rem 3rem;
+  padding: 2rem 0rem;
   margin: 20px 10px;
   background-color: white;
   overflow: auto;
@@ -64,6 +64,8 @@
   align-items: center;
   font-size: 1.2em;
   margin-bottom: 2em;
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 
 .back-link {
@@ -78,6 +80,12 @@
   .mdx-card-wrapper {
     padding: 1rem;
   }
+
+  .back-link-container {
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+
   .mdx-image {
     width: 90%;
   }
