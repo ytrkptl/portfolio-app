@@ -12,7 +12,7 @@
   box-sizing: border-box;
   box-shadow: 1px 1px 1px 0px black;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  font-family: "Maiandra GD", "Nunito", "Roboto", sans-serif;
+  font-family: "Open Sans", "Roboto", sans-serif;
 }
 
 .CardDetails:hover {
@@ -25,13 +25,11 @@
   text-align: center;
 }
 .subjectTitle {
-  /* color: #2d3436; */
   font-weight: 600;
   margin: -2px -12px 10px -12px;
   font-size: 32px;
   padding: 8px;
   color: #4e4e4e;
-  /* background: rgb(29, 28, 28); */
 }
 
 .textDescription {
