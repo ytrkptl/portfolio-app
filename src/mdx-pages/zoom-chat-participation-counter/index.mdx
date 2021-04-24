@@ -1,11 +1,16 @@
 import Image1 from "./old-chat2.png";
 import Image2 from "./old-chat-excel3.png";
 import Image3 from "./new-chat2.png";
-import BlogHeader from "../../components/BlogHeader/BlogHeader.js";
+import HighlightedCodeBlock from "../../components/HighlightedCodeBlock/HighlightedCodeBlock.js";
 
 <!-- MDX is only allowing to have one component being exported. Could not do multiple exports -->
 
-export const MultiJsxContainer = ({ imageNum, title, subtitle }) => {
+export const MultiJsxContainer = ({
+  imageNum,
+  title,
+  subtitle,
+  codeString,
+}) => {
   switch (imageNum) {
     case 1:
       return (
@@ -35,7 +40,7 @@ export const MultiJsxContainer = ({ imageNum, title, subtitle }) => {
         />
       );
     default:
-      return;
+      return <HighlightedCodeBlock codeString={codeString} />;
   }
 };
 
@@ -55,7 +60,7 @@ I'd have to copy the text from the file above and paste it in an Excel file, the
 
 This worked great as all messages to myself (the host) would end up having the following format:
 
-    `hh:mm:ss From Sender to Host: message`
+<MultiJsxContainer codeString={`hh:mm:ss From Sender to Host: message`} />
 
 Once sorted, I would use the "countA" function in Excel to count how many times a participant chatted with me. I'd have to do it manually for however many participants were in the meeting. Doing so would take about 5 minutes for a single meeting.
 
@@ -81,17 +86,19 @@ Anyways, recently when I tried to use this App, things weren't working. What cou
 
 It now has the following format:
 
-    `hh:mm:ss From Sender to Host: message`
+<MultiJsxContainer codeString={`hh:mm:ss From Sender to Host: message`} />
 
 But wait, what if I allow students to chat with everyone, both publicly and privately?
 
 Well, here is the format for public chat messages:
 
-    `hh:mm:ss From Sender : message`
+<MultiJsxContainer codeString={`hh:mm:ss From Sender : message`} />
 
 Here is the format for private chat messages:
 
-    `hh:mm:ss From Sender to Receiver(Direct Message) : message`
+<MultiJsxContainer
+  codeString={`hh:mm:ss From Sender to Receiver(Direct Message) : message`}
+/>
 
 In either case, what I need to achieve now is first to be able to separate the text content at the end of each line, then extract a substring that begins with the word "From" and ends at the colon character, ":". Once this is achieved, I have to do the hard part of sorting and counting occurrences of each string within say an array or an object. I won't get into the explanation here but the code and the site can be found at the following links:
 
