@@ -1,0 +1,122 @@
+import Image1 from "./a.png";
+import Image2 from "./found-elsewhere.png";
+import Image3 from "./b.png";
+import Image4 from "./url-breakdown-heroku.png";
+
+<!-- MDX is only allowing to have one component being exported. Could not do multiple exports -->
+
+export const MultiJsxContainer = ({ imageNum, title, subtitle }) => {
+  switch (imageNum) {
+    case 1:
+      return (
+        <img
+          src={Image1}
+          alt={`example full size avatar-letter for the letter "a"`}
+          className="mdx-image"
+          style={{ maxWidth: "100%" }}
+        />
+      );
+    case 2:
+      return (
+        <img
+          src={Image2}
+          alt={`example image of avatar-letters found elsewhere`}
+          className="mdx-image"
+          style={{ maxWidth: "100%" }}
+        />
+      );
+    case 3:
+      return (
+        <img
+          src={Image3}
+          alt={`example full size avatar-letter for the letter "b"`}
+          className="mdx-image"
+          style={{ maxWidth: "100%" }}
+        />
+      );
+    default:
+      return (
+        <img
+          src={Image4}
+          alt={`breakdown of what the API expects as far as the url is concerned`}
+          className="mdx-image"
+          style={{ maxWidth: "100%" }}
+        />
+      );
+  }
+};
+
+I hesitated in sharing this and kept it a secret for a few months now for the following reasons:
+
+- Is this really going to help someone?
+- Is this worth the time and money?
+
+When I first created this, I was super excited and thought I would make it open source and allow anyone to add their own avatar-letter sets to it. I had even put together the article below and was ready to share it, but after answering the questions above, I chose not to. But I cannot contain my thoughts and need to open up. Also, I want to know everyone else's thoughts about this.
+
+- So please just provide some feedback about this project and I would greatly appreciate it. And before you have to mention, let me share that I am already aware of many other avatar providers or libraries that exist.
+- Finally, please also share how to go about such ideas in the future. Should I keep thinking over and over again about what I am sharing or should I just share and get feedback for the pure joy of it?
+
+> What follows below is my article as it was originally written months ago (verbatim)
+
+## Wanting To Open Source But Need Guidance
+
+Over the last 2-3 years, in my free time, I've been learning web and mobile development online. During that time, I've created several projects that live either on my computer, online, or both. These include projects made to solve a problem I encountered while working (for both past and current employers), tutorials I've followed while learning something new, and projects I'm passionate about. However, I've never really created a service or an API that is open to the public for use, and/or haven't created any open source projects myself. So, I wanted to give this a shot.
+
+### How This Idea Originated?
+
+I originally came across this idea when working on a math project that I'm building. It involved getting a user picture or avatar to be displayed on the screen. To do this, I had several options to choose from like Avatars from Material UI, Chakra, and so on. However, I did not want to download any extra packages to my project. I also had the option to use placeholder images provided by sites like Robohash, but I've had problems with such services in the past and did not want to rely on them for the entirety of my project. This time, I wanted something I had more control over. So I decided to create my own Robohash-like site that returns images or avatars upon simply entering the proper URL in the image tag's "src" attribute or in the browser. I did not want the API to return images of avatars but instead images of "avatar-letters" or alphabets.
+
+**_Here's an example image of what will be returned by set1 of avatar-letter:_**
+
+<MultiJsxContainer imageNum={1} />
+
+### Why I Felt This Was Needed?
+
+I felt like this sort of a project was needed (maybe) because all the component libraries or avatars I've encountered typically return an image that is made using some sort of flat and simple typeface, font, or the like and NOT a stylish, 3D-ish font instead. What I wanted to return was an image containing alphabets that looked out of this world.
+
+> Oh wow, while typing this article, I have already come across so many new ideas and possibilities to extend this project.
+
+**_Anyways, here are images of what most such avatar-letter libraries, sites, etc. return:_**
+
+<MultiJsxContainer imageNum={2} />
+
+### What I Have So Far?
+
+The following is what I have, and let me just say that I have not used any fonts so far in creating the avatar-letter images that are being returned by this API. Instead, I chose some cool-looking alphabet images that I found for free on Freepik. I had to edit the images from Freepik further using PowerPoint and also using the Sharp library. The images weren't as editable as I wanted, so I just went with the best I could get.
+
+**_Here's an example image of what will be returned by set2 of avatar-letter:_**
+
+<MultiJsxContainer imageNum={3} />
+
+**_The following is a breakdown of what the avatar-letter API expects:_**
+
+<MultiJsxContainer />
+
+### What I Need Help On?
+
+I am wondering how to go about this project so I can make it available for anyone to contribute to while ensuring that I get the final say regarding what image sets are added to this project. Does anyone have experience in creating such services or projects?
+
+### Problems I Encountered
+
+The biggest problem I encountered was being unable to have full control over editing the images and all their layers since I relied on the free images found on the internet.
+
+### Suggestions/Feedback
+
+I am open to any suggestions, comments, feedback that you can provide on this project and how it can be improved.
+
+### Helpful Links
+
+You can find the avatar-letter site at the following link:
+[Avatar-letter](https://avatar-letter.netlify.app/)
+
+### Credits
+
+I owe it to the following sites, people, authors, etc. for providing their resources for free:
+
+1. Blue arrow was downloaded from Pixabay and created by Clker-Free-Vector-Images.
+
+2. The alphabet images were downloaded from my site but were originally found on Freepik at the following links:
+
+   - [pikisuperstar](https://www.freepik.com/free-vector/colorful-alphabet_958008.htm)
+
+   - [Sapann-Design](https://www.freepik.com/free-vector/hand-drawn-colorful-alphabet_2920859.htm)
