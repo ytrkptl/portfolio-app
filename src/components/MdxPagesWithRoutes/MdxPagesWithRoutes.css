@@ -1,6 +1,38 @@
 .blog-mdx-content {
+  margin-top: 3rem;
   padding-left: 3rem;
   padding-right: 3rem;
+  line-height: 1.8;
+}
+
+.blog-mdx-content pre {
+  background-color: honeydew;
+}
+
+.blog-mdx-content ol li,
+.blog-mdx-content ul li {
+  line-height: 2;
+}
+
+.blog-mdx-content blockquote {
+  font-family: inherit;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  font-size: 1.25rem;
+  line-height: 1.8;
+  box-sizing: border-box;
+  border-width: 0;
+  border-style: solid;
+  border-color: #cccccc;
+  margin: 0;
+  font-weight: 500;
+  font-style: italic;
+  color: #111827;
+  border-left-width: 0.25rem;
+  border-left-color: #e5e7eb;
+  margin-top: 1.6em;
+  margin-bottom: 1.6em;
+  padding-left: 1.0666667em;
 }
 
 @media screen and (max-width: 600px) {
