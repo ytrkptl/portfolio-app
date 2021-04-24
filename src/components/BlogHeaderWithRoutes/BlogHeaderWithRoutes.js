@@ -7,7 +7,7 @@ const BlogHeaderWithRoutes = () => {
   return (
     <Switch>
       {BlogListData.map(el=>
-        <Route exact path={`/blog/${el.url}`}>
+        <Route exact path={`/blog/${el.url}`} key={`${el.url}`}>
           <BlogHeader title={el.title} subtitle={el.subtitle} />
         </Route>
       )}
