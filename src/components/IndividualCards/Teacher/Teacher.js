@@ -15,7 +15,7 @@ let skills = [
   "Accommodating instruction and materials for students",
   "Differentiating Instruction",
   "Supervising students learning online",
-  "Participate in all kinds of meetings",
+  "Participating in all kinds of meetings",
 ];
 
 const Teacher = ({ title, id, cardNum }) => {
