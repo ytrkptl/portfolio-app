@@ -15,6 +15,7 @@ ReactGA.pageview(window.location.pathname + window.location.search);
 // the following function accepts hashname or id
 // and scrolls to that id's location on the page
 export const scrollTo = (hashName) => {
+  if(hashName === "blog") return window.scrollTo(0, 0);
   let parentRect = document.body.getBoundingClientRect();
   let element = document.getElementById(hashName);
   let rect = element.getBoundingClientRect();
@@ -83,14 +84,11 @@ class App extends Component {
 
   // use this function to scroll to specified hashname from
   // hamburger icon/overlay menu.
-  scrollToFromMenu = (hashName) => {
+  scrollToFromMenu = async (hashName) => {
     let toggler = document.getElementById("hamburgerRef");
     toggler.click();
-    let regexStr = /blog/g
-    if(regexStr.test(window.location.href)) {
-      this.props.history.push(`/`)
-      setTimeout(()=> scrollTo(hashName), 500)
-      return
+    if(hashName !== "blog") {
+      await Promise.resolve(()=>this.props.history.push(`/`))
     }
     scrollTo(hashName);
   };
