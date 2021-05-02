@@ -15,7 +15,7 @@ ReactGA.pageview(window.location.pathname + window.location.search);
 // the following function accepts hashname or id
 // and scrolls to that id's location on the page
 export const scrollTo = (hashName) => {
-  if(hashName === "blog") return window.scrollTo(0, 0);
+  if(hashName === "blog") return
   let parentRect = document.body.getBoundingClientRect();
   let element = document.getElementById(hashName);
   let rect = element.getBoundingClientRect();
@@ -26,13 +26,6 @@ export const scrollTo = (hashName) => {
 class App extends Component {
   constructor() {
     super();
-    this.state = {
-      input: "",
-      route: "home",
-      hamburgerClicked: false,
-      currentRole: "teacher",
-      animState: 0,
-    };
     this.rootDivRef = createRef();
   }
 
@@ -93,22 +86,6 @@ class App extends Component {
     scrollTo(hashName);
   };
 
-  // function to update the role
-  updateRole = (role) => {
-    this.setState({ currentRole: role });
-    switch (role) {
-      case "teacher":
-        this.setState({ animState: 1 });
-        break;
-      case "developer":
-        this.setState({ animState: 2 });
-        break;
-      default:
-        this.setState({ animState: 0 });
-        break;
-    }
-  };
-
   render() {
     return (
       <div className="App" ref={this.rootDivRef} onScroll={this.scroll}>
@@ -120,17 +97,13 @@ class App extends Component {
         <div className="AppDiv">
           <Switch>
             <Route path="/blog">
-              <MdxContainer 
-                scrollToFromMenu={this.scrollToFromMenu}
-                scrollToTop={this.scrollToTop} 
-              />
+              <MdxContainer />
             </Route>
             <Route path="/">
-              <Banner scrollTo={this.scrollTo} animState={this.state.animState} />
+              <Banner scrollTo={this.scrollTo} />
               <div className="cardListParent">
                 <CardList
                   scrollTo={this.scrollTo}
-                  currentRole={this.state.currentRole}
                 />
               </div>
             </Route>
