@@ -121,6 +121,26 @@
   cursor: pointer;
   border-radius: 0;
 }
+
+.social {
+  font-size: 16px;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 4px;
+  padding: 4px 10px;
+  height: auto;
+  overflow-wrap: break-word;
+  width: 100%;
+  text-align: left;
+}
+
+.contactPillParent:nth-of-type(2) .social::before {
+  content: "🔗";
+  margin-right: 10px;
+}
+
 @media screen and (max-width: 500px) {
   .contactSubtitle {
     text-align: justify;

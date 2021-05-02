@@ -9,7 +9,7 @@ const Contact = ({ title, id, cardNum }) => {
 			<h3 className="contactSubtitle">
 				Get in touch with me by filling out the form below or email me at {` `}
 				<a target="_top" href="mailto:ytrkptl.ndmlr@gmail.com">ytrkptl.ndmlr@gmail.com</a>:
-				</h3>
+			</h3>
 			<div className="contactPillParent">
 				<form className="contactForm" action={process.env.REACT_APP_FORM_SUBMIT_URL} method="POST">
 					<div className="contactFormDiv">
@@ -51,6 +51,46 @@ const Contact = ({ title, id, cardNum }) => {
 						<button type="submit" className="sendButton">Send</button>
 					</div>
 				</form>
+			</div>
+			<h3 className="contactSubtitle" style={{paddingBottom: "0"}}>Connect/Social</h3>
+			<div className="contactPillParent">
+				<p className="social">
+					<a
+						href="https://blog.yatrik.dev/"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						Hashnode Powered Blog
+					</a>
+				</p>
+				<p className="social">
+					<a
+						href="https://dev.to/ytrkptl"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						Dev.to
+					</a>
+				</p>
+				<p className="social">I am not really active on Twitter but here you go:
+					<a
+						href="https://twitter.com/ytrkptl"
+						target="_blank"
+						rel="noopener noreferrer"
+						style={{display: "inline" ,marginLeft: "10px"}}
+					>
+						Twitter
+					</a>
+				</p>
+				<p className="social">
+					<a
+						href="https://www.facebook.com/yatrik.patel.56/"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						Facebook
+					</a>
+				</p>
 			</div>
 			<ButtonInCard nextCardIdAndUrl="credits" bgColor='pink' />
 		</CustomCard3>
