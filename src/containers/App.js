@@ -15,7 +15,7 @@ ReactGA.pageview(window.location.pathname + window.location.search);
 // the following function accepts hashname or id
 // and scrolls to that id's location on the page
 export const scrollTo = (hashName) => {
-  if(hashName === "blog") return
+  if(hashName === "blog") return window.scrollTo(0,0)
   let parentRect = document.body.getBoundingClientRect();
   let element = document.getElementById(hashName);
   let rect = element.getBoundingClientRect();
