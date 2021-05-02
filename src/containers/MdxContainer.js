@@ -3,7 +3,6 @@ import BlogList from "../components/BlogList/BlogList";
 import MdxPagesWithRoutes from "../components/MdxPagesWithRoutes/MdxPagesWithRoutes"
 import BlogHeaderWithRoutes from "../components/BlogHeaderWithRoutes/BlogHeaderWithRoutes";
 import ScrollToTop from "../components/ScrollToTop/ScrollToTop";
-import { scrollTo } from "./App";
 import { Switch, Route, Link, useHistory } from "react-router-dom";
 import "./MdxContainer.css"
 
@@ -13,19 +12,17 @@ const BackLinkSwitchFunction = ({ containerType }) => {
 
   let history = useHistory()
 
+  // to restore scroll to the last blog they saw on the blog page
   const handleGoingBack = (e) => {
     e.preventDefault();
-    setTimeout(()=> {
-      scrollTo("blog-info")
-    }, 800)
-    history.push("/blog-info")
+    history.push("/blog")
   }
 
   switch (containerType) {
     case 2:
-      return <Link to="/blog"><BackLink />Back</Link>
+      return <Link to="/blog" onClick={(e)=>handleGoingBack(e)}><BackLink />Back</Link>
     default:
-      return <Link to="/blog-info" onClick={(e)=>handleGoingBack(e)}><BackLink />Back</Link>
+      return <Link to="/"><BackLink />Back</Link>
   }
 }
 
