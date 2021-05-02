@@ -118,4 +118,5 @@ class App extends Component {
   }
 }
 
+// wrapped in withRouter for using this.props.history.push
 export default withRouter(App);
