@@ -50,7 +50,7 @@ const Developer = ({ title, id, cardNum }) => {
           );
         })}
       </div>
-      <ButtonInCard nextCardIdAndUrl="blog-info" bgColor="pink" />
+      <ButtonInCard nextCardIdAndUrl="teacher" bgColor="pink" />
     </CustomCard3>
   );
 };
