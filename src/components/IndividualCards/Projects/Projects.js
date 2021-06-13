@@ -138,6 +138,18 @@ const Projects = ({ title, id, cardNum, scrollTheRoot }) => {
           );
         })}
       </div>
+      <h3 className="projectSubtitle">More projects</h3>
+      <div className="projectsPillParent">
+        <p className="projectsPill2">
+          <a
+            href={"https://codepen.io/ytrkptl"}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {"Find some of my projects on CodePen"}
+          </a>
+        </p>
+      </div>
       <ButtonInCard nextCardIdAndUrl="developer" bgColor="pink" />
     </CustomCard3>
   );

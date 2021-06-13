@@ -42,7 +42,7 @@ const Teacher = ({ title, id, cardNum }) => {
       </div>
       <h3 className="teacherSubtitle">Online Activity</h3>
       <div className="teacherPillParent">
-        <p className="teacherPill teacherPill2">
+        <p className="teacherPill">
           <a
             href={"https://www.teacherspayteachers.com/Store/Yatrik-Patel"}
             target="_blank"
@@ -51,7 +51,7 @@ const Teacher = ({ title, id, cardNum }) => {
             {"Find my products on Teachers Pay Teachers"}
           </a>
         </p>
-        <p className="teacherPill teacherPill2">
+        <p className="teacherPill">
           <a
             href={"https://www.youtube.com/channel/UCfUeFFSqv4i0O9X6wzxojQA"}
             target="_blank"
