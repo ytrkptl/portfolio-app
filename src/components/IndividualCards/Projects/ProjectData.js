@@ -1,5 +1,12 @@
 export const projectData = [
   {
+    projectName: `Avatar Letter library`,
+    siteLink: "https://avatar-letter.netlify.app/",
+    gitHubLink: "https://github.com/ytrkptl/avatar-letter-client",
+    imageUrl: `https://res.cloudinary.com/dun1b4fpw/image/upload/f_auto,q_auto,w_auto/v1574951670/portfolioapp/avatar-letter.png`,
+    description: `A 3D-ish, stylish, cool, or unique-looking avatar-letter library that I made this to use in another app I'm working on so I don't have to rely on other Avatar libraries or providers, or maybe just for fun. The idea is to return a beautiful 3D-ish, stylish, cool, or unique-looking letter's image to the user rather than the default ones we see in most applications while making sure to provide a variety of sizes, sets (2 for now), and formats (2 for now) for free.`,
+  },
+  {
     projectName: `Shop-tunnel E-commerce store`,
     siteLink: "https://shop-tunnel.herokuapp.com/",
     gitHubLink: "https://github.com/ytrkptl/shop-tunnel",
