@@ -11,7 +11,7 @@ const BlogList = () => {
         {
           // don't use index as key
           BlogListData.map((el) => 
-            <article className="blog-list-item" key={`${el.title}`}>
+            <article className="blog-list-item-article" key={`${el.title}`}>
               <Link className="blog-list-item" to={`/blog/${el.url}`}>
                 <h3>{el.title}</h3>
                 <h4>{el.subtitle}</h4>
