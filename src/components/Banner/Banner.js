@@ -13,17 +13,21 @@ const Banner = () => {
           src="https://res.cloudinary.com/dun1b4fpw/image/upload/c_limit,f_auto,h_140,q_auto,w_140/v1574951668/portfolioapp/profile.jpg"
           className="profilePhoto"
         />
-        <h2 className="belowNameText">
-          Math teacher passionate about becoming a developer
-        </h2>
+        <h2 className="belowNameText">Teacher turned Developer</h2>
         <h3 className="aboveFunctionText">
           I guess the best way to express that is with the following:
         </h3>
-        <img
-          alt="teacher to developer function"
-          src="https://res.cloudinary.com/dun1b4fpw/image/upload/c_limit,f_auto,q_auto,w_600/v1574951668/portfolioapp/teacherToDev.png"
-          className="teacherToDevImage"
-        />
+        <p className="be-sure-text">A before/after slider that you can play with:</p>
+        <div className="before-after-container">
+          <iframe
+            title="Before-After Slider"
+            frameborder="0"
+            className="juxtapose"
+            width="auto"
+            height="400"
+            src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=07c97570-ff8e-11eb-abb7-b9a7ff2ee17c"
+          ></iframe>
+        </div>
         <ButtonInCard nextCardIdAndUrl="about-me" />
       </div>
     </div>
