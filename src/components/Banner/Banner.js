@@ -25,7 +25,7 @@ const Banner = () => {
             className="juxtapose"
             width="auto"
             height="400"
-            src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=07c97570-ff8e-11eb-abb7-b9a7ff2ee17c"
+            src={`https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=${process.env.REACT_APP_JUXTAPOSE_ID}`}
           ></iframe>
         </div>
         <ButtonInCard nextCardIdAndUrl="about-me" />
