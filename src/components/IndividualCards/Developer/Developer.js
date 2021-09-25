@@ -26,12 +26,16 @@ let skills = [
   "Firebase",
   "Parse Server",
   "Docker",
+  "Kubernetes",
+  "Google Cloud",
   "Redis",
   "REST API",
   "Gatsby",
   "Next.js",
   "Python",
   "Flask",
+  "Jest",
+  "Cypress"
 ];
 
 const Developer = ({ title, id, cardNum }) => {

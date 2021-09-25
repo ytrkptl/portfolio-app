@@ -22,7 +22,11 @@ const Teacher = ({ title, id, cardNum }) => {
   return (
     <CustomCard3 id={id} cardNum={cardNum} title={title}>
       <h3 className="teacherSubtitle">
-        7th year Math teacher who currently teaches online.
+        Former Math teacher licensed to teach in Virginia, West Virginia,
+        Tennessee, and South Carolina.
+      </h3>
+      <h3 className="teacherSubtitle">
+        Taught to schools in TN, SC, and other states while working for Proximity Learning.
       </h3>
       <h3 className="teacherSubtitle">
         Taught at brick-and-mortar schools in both WV and VA my first five
