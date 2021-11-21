@@ -1,4 +1,4 @@
-.CardDetails {
+.cardDetails {
   /* border: 1px solid black; */
   height: 90%;
   width: 100%;
@@ -12,10 +12,9 @@
   box-sizing: border-box;
   box-shadow: 1px 1px 1px 0px black;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  font-family: "Open Sans", "Roboto", sans-serif;
 }
 
-.CardDetails:hover {
+.cardDetails:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -25,13 +24,9 @@
   text-align: center;
 }
 .subjectTitle {
-  font-weight: 600;
+  font-weight: 500;
   margin: -2px -12px 10px -12px;
   font-size: 32px;
   padding: 8px;
   color: #4e4e4e;
-}
-
-.textDescription {
-  text-align: left;
 }

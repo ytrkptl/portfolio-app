@@ -39,7 +39,7 @@
 }
 .contactLabel {
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 700; /* same as bold */
   /* background-color: paleturquoise; */
   box-sizing: border-box;
   padding: 7px;
@@ -75,7 +75,7 @@
 }
 .contactLabel2 {
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 700; /* same as bold */
   /* background-color: paleturquoise; */
   box-sizing: border-box;
   padding: 7px;

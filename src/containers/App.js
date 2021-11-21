@@ -1,6 +1,7 @@
 import React, { Component, createRef } from "react";
 import { Route, Switch, withRouter } from "react-router-dom";
 import Navigation from "../components/Navigation/Navigation";
+import MyBestProjectYet from "../components/MyBestProjectYet/MyBestProjectYet";
 import Banner from "../components/Banner/Banner";
 import CardList from "../components/CardList/CardList";
 import MdxContainer from "./MdxContainer";
@@ -100,7 +101,8 @@ class App extends Component {
               <MdxContainer />
             </Route>
             <Route path="/">
-              <Banner scrollTo={this.scrollTo} />
+              <MyBestProjectYet />
+              <Banner />
               <div className="cardListParent">
                 <CardList
                   scrollTo={this.scrollTo}

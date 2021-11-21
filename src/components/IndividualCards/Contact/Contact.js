@@ -72,12 +72,11 @@ const Contact = ({ title, id, cardNum }) => {
 						Dev.to
 					</a>
 				</p>
-				<p className="social">I am not really active on Twitter but here you go:
+				<p className="social">
 					<a
 						href="https://twitter.com/ytrkptl"
 						target="_blank"
 						rel="noopener noreferrer"
-						style={{display: "inline" ,marginLeft: "10px"}}
 					>
 						Twitter
 					</a>
