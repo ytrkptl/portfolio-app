@@ -22,7 +22,7 @@ const Teacher = ({ title, id, cardNum }) => {
   return (
     <CustomCard3 id={id} cardNum={cardNum} title={title}>
       <h3 className="teacherSubtitle">
-        Former Math teacher licensed to teach in Virginia, West Virginia,
+        Math teacher licensed to teach in Virginia, West Virginia,
         Tennessee, and South Carolina.
       </h3>
       <h3 className="teacherSubtitle">

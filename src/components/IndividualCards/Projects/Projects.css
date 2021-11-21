@@ -133,7 +133,7 @@
   margin: 0;
   box-sizing: border-box;
   font-size: 24px;
-  font-weight: bold;
+  font-weight: 700; /* same as bold */
   transition: all 0.2s ease-in-out;
   border-bottom: 1px solid gray;
   padding-right: 20px;
