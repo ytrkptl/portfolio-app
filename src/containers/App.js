@@ -7,11 +7,7 @@ import CardList from "../components/CardList/CardList";
 import MdxContainer from "./MdxContainer";
 import Footer from "../components/Footer/Footer";
 import arrow from "../assets/arrow2.png";
-import ReactGA from "react-ga";
 import "./App.css";
-
-ReactGA.initialize(`${process.env.REACT_APP_GA_TRACKING_ID}`);
-ReactGA.pageview(window.location.pathname + window.location.search);
 
 // the following function accepts hashname or id
 // and scrolls to that id's location on the page
