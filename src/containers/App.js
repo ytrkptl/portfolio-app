@@ -27,7 +27,7 @@ class App extends Component {
 
   componentDidMount() {
     window.addEventListener("scroll", this.handleScroll); //
-    fetch("https://learnwithyatrik-api.onrender.com/api/v1/heroku-autowake")
+    fetch("https://learnwithyatrik-api.onrender.com/heroku-autowake")
   }
 
   componentWillUnmount() {
