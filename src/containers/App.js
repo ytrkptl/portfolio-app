@@ -11,7 +11,7 @@ import "./App.css";
 // the following function accepts hashname or id
 // and scrolls to that id's location on the page
 export const scrollTo = (hashName) => {
-  if(hashName === "blog") return window.scrollTo(0,0)
+  if (hashName === "blog") return window.scrollTo(0, 0);
   let parentRect = document.body.getBoundingClientRect();
   let element = document.getElementById(hashName);
   let rect = element.getBoundingClientRect();
@@ -77,8 +77,8 @@ class App extends Component {
   scrollToFromMenu = async (hashName) => {
     let toggler = document.getElementById("hamburgerRef");
     toggler.click();
-    if(hashName !== "blog") {
-      await Promise.resolve(()=>this.props.history.push(`/`))
+    if (hashName !== "blog") {
+      await Promise.resolve(() => this.props.history.push(`/`));
     }
     scrollTo(hashName);
   };
@@ -99,9 +99,7 @@ class App extends Component {
             <Route path="/">
               <Banner />
               <div className="cardListParent">
-                <CardList
-                  scrollTo={this.scrollTo}
-                />
+                <CardList scrollTo={this.scrollTo} />
               </div>
             </Route>
           </Switch>
