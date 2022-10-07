@@ -9,8 +9,9 @@ const AboutMe = ({ title, id, cardNum }) => {
   return (
     <CustomCard3 id={id} cardNum={cardNum} title={title}>
       <p className="aboutMePara1">
-        I am a Web Developer from Virginia, United States. Formerly, I
-        taught math grades 6-12 in multiple states across the US.  <span
+        I am a Web Developer from Virginia, United States. Formerly, I taught
+        math grades 6-12 in multiple states across the US.{" "}
+        <span
           className="readMore"
           onClick={() => setReadMore((readMore) => !readMore)}
         >
@@ -18,9 +19,8 @@ const AboutMe = ({ title, id, cardNum }) => {
             ? "Click here to read more..."
             : "Click here to read less..."}
         </span>
-      </p> 
+      </p>
       <div>
-       
         {readMore && (
           <>
             <p className="aboutMePara1">
@@ -67,15 +67,11 @@ const AboutMe = ({ title, id, cardNum }) => {
               POSTGRES, Firebase Storage, MongoDB, etc.
             </p>
             <p className="aboutMePara1">
-              All this sounds fancy, but to see it for yourself, you should
+              {`All this sounds fancy, but to see it for yourself, you should
               check out my projects included in this site. Apart from this, I
               sell math lessons online and have occasionally made math YouTube
               videos when needed. These skills can be easily brought over to
-              development as well. I have also been enrolled in a Master of
-              Science degree at the University of Texas Rio Grande Valley, and
-              have taken a Cryptology, and a Graph Theory course in the past.
-              However, due to the cost of education, I had to stop taking
-              further courses with them.
+              development as well. I have taken a couple of Master’s degree level courses in Cryptology, and Graph Theory via the University of Texas Rio Grande Valley. I am also currently enrolled in Master of Informational Technology program at Virginia Tech to gain more credentials.`}
             </p>
             <p className="aboutMePara1">
               I hope this clarifies and provides enough information about my
