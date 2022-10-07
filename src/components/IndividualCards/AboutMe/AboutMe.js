@@ -9,8 +9,8 @@ const AboutMe = ({ title, id, cardNum }) => {
   return (
     <CustomCard3 id={id} cardNum={cardNum} title={title}>
       <p className="aboutMePara1">
-        I am a Web Developer from Virginia, United States. Formerly, I taught
-        math grades 6-12 in multiple states across the US.{" "}
+        I am a Web Developer from Virginia, United States. I teach math
+        part-time to grades 6-12 in multiple states across the US.{" "}
         <span
           className="readMore"
           onClick={() => setReadMore((readMore) => !readMore)}
