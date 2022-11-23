@@ -149,6 +149,17 @@ const Projects = ({ title, id, cardNum, scrollTheRoot }) => {
             {"Find some of my projects on CodePen"}
           </a>
         </p>
+        <p className="projectsPill2">
+          <a
+            href={"https://va-map-creator.vercel.app/"}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {
+              "Check out this Virginia Map Created I made that allows you to download the map as an SVG file"
+            }
+          </a>
+        </p>
       </div>
       <ButtonInCard nextCardIdAndUrl="developer" bgColor="pink" />
     </CustomCard3>
