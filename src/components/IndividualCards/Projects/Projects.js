@@ -156,7 +156,7 @@ const Projects = ({ title, id, cardNum, scrollTheRoot }) => {
             rel="noopener noreferrer"
           >
             {
-              "Check out this Virginia Map Created I made that allows you to download the map as an SVG file"
+              "Check out this Virginia Map creator I made that allows you to download the map as an SVG file"
             }
           </a>
         </p>
