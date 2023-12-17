@@ -17,11 +17,12 @@ const Banner = () => {
         <h3 className="aboveFunctionText">
           I guess the best way to express that is with the following:
         </h3>
-        <p className="be-sure-text">A before/after slider that you can play with:</p>
-        <div className="before-after-container" style={{maxWidth: "100%"}}>
+        <p className="be-sure-text">
+          A before/after slider that you can play with:
+        </p>
+        <div className="before-after-container" style={{ maxWidth: "100%" }}>
           <iframe
             title="Before-After Slider"
-            frameBorder="0"
             className="juxtapose"
             width="auto"
             height="400"
