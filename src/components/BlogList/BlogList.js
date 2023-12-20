@@ -1,7 +1,7 @@
-import React from 'react'
-import { BlogListData } from "./BlogListData.js";
+import React from 'react';
+import { BlogListData } from './BlogListData.js';
 import { Link } from 'react-router-dom';
-import "./BlogList.css";
+import './BlogList.css';
 
 const BlogList = () => {
   return (
@@ -10,7 +10,7 @@ const BlogList = () => {
       <div className="blog-list">
         {
           // don't use index as key
-          BlogListData.map((el) => 
+          BlogListData.map((el) => (
             <article className="blog-list-item-article" key={`${el.title}`}>
               <Link className="blog-list-item" to={`/blog/${el.url}`}>
                 <h3>{el.title}</h3>
@@ -19,12 +19,11 @@ const BlogList = () => {
                 <span>Read &#10141;</span>
               </Link>
             </article>
-          )
+          ))
         }
       </div>
     </>
-   
-  )
-}
+  );
+};
 
-export default BlogList
+export default BlogList;

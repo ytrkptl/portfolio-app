@@ -4,15 +4,15 @@
   text-align: left;
 }
 .teacherSubtitle::before {
-  content: "➖";
+  content: '➖';
   margin-right: 10px;
 }
 .teacherSubtitle:nth-of-type(1)::before {
-  content: "👨🏽‍🏫";
+  content: '👨🏽‍🏫';
   margin-right: 10px;
 }
 .teacherSubtitle:nth-of-type(5)::before {
-  content: "";
+  content: '';
   margin-right: unset;
 }
 
@@ -43,12 +43,12 @@
 }
 
 .teacherPillParent:nth-of-type(1) .teacherPill::before {
-  content: "-";
+  content: '-';
   margin-right: 10px;
 }
 
 .teacherPillParent:nth-of-type(2) .teacherPill::before {
-  content: "👉";
+  content: '👉';
   margin-right: 10px;
 }
 

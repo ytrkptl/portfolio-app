@@ -1,15 +1,15 @@
 export const projectData = [
   {
     projectName: `Avatar Letter library`,
-    siteLink: "https://avatar-letter.netlify.app/",
-    gitHubLink: "https://github.com/ytrkptl/avatar-letter-client",
+    siteLink: 'https://avatar-letter.netlify.app/',
+    gitHubLink: 'https://github.com/ytrkptl/avatar-letter-client',
     imageUrl: `https://res.cloudinary.com/dun1b4fpw/image/upload/f_auto,q_auto,w_auto/v1574951670/portfolioapp/avatar-letter.png`,
     description: `A 3D-ish, stylish, cool, or unique-looking avatar-letter library that I made this to use in another app I'm working on so I don't have to rely on other Avatar libraries or providers, or maybe just for fun. The idea is to return a beautiful 3D-ish, stylish, cool, or unique-looking letter's image to the user rather than the default ones we see in most applications while making sure to provide a variety of sizes, sets (2 for now), and formats (2 for now) for free.`,
   },
   {
     projectName: `Shop-tunnel E-commerce store`,
-    siteLink: "https://shop-tunnel.herokuapp.com/",
-    gitHubLink: "https://github.com/ytrkptl/shop-tunnel",
+    siteLink: 'https://shop-tunnel.herokuapp.com/',
+    gitHubLink: 'https://github.com/ytrkptl/shop-tunnel',
     imageUrl: `https://res.cloudinary.com/dun1b4fpw/image/upload/f_auto,q_auto,w_auto/v1574951670/portfolioapp/ecommerce.png`,
     description: `An e-commerce store where you can buy clothers. It incorporates
 		the use of Stripe Payment API for making payments, Firestore for storage, 
@@ -19,8 +19,8 @@ export const projectData = [
   },
   {
     projectName: `Face Recognition App`,
-    siteLink: "https://face-rec-app-1.herokuapp.com/",
-    gitHubLink: "https://github.com/ytrkptl/face-rec-app-1",
+    siteLink: 'https://face-rec-app-1.herokuapp.com/',
+    gitHubLink: 'https://github.com/ytrkptl/face-rec-app-1',
     imageUrl: `https://res.cloudinary.com/dun1b4fpw/image/upload/f_auto,q_auto,w_auto/v1574951670/portfolioapp/face.png`,
     description: `A face recognition app that uses the Clarifai API to 
 		detect multiple faces within the photos you upload to it. You can use
@@ -34,8 +34,8 @@ export const projectData = [
   },
   {
     projectName: `Airtable Gatsby Blog`,
-    siteLink: "https://yatrik-blog.netlify.com/",
-    gitHubLink: "https://github.com/ytrkptl/yatrik-airtable-gatsby-blog",
+    siteLink: 'https://yatrik-blog.netlify.com/',
+    gitHubLink: 'https://github.com/ytrkptl/yatrik-airtable-gatsby-blog',
     imageUrl: `https://res.cloudinary.com/dun1b4fpw/image/upload/f_auto,q_auto,w_auto/v1574951670/portfolioapp/blog.png`,
     description: `This server-side blog is built using Gatsby and is fully responsive
 		and allows you to toggle between night/day modes. It utilizes
@@ -45,9 +45,9 @@ export const projectData = [
 		blog post to it.`,
   },
   {
-    projectName: "School Employee Directory",
-    siteLink: "https://achsdirectory.netlify.com/",
-    gitHubLink: "https://github.com/ytrkptl/achsdirectory",
+    projectName: 'School Employee Directory',
+    siteLink: 'https://achsdirectory.netlify.com/',
+    gitHubLink: 'https://github.com/ytrkptl/achsdirectory',
     siteBackendLink: `https://learnwithyatrik-api.onrender.com/api/achs-dir`,
     gHBackendLink: `https://github.com/ytrkptl/achsdirectory-api`,
     imageUrl: `https://res.cloudinary.com/dun1b4fpw/image/upload/f_auto,q_auto,w_auto/v1574951670/portfolioapp/achsdirectory.png`,

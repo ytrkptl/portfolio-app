@@ -1,9 +1,7 @@
 import React from 'react';
 
 const BlogTitle = ({ title }) => {
-  return (
-    <h1>{title}</h1>
-  )
-}
+  return <h1>{title}</h1>;
+};
 
-export default BlogTitle
+export default BlogTitle;

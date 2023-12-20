@@ -1,7 +1,7 @@
-import React, { useState } from "react";
-import CustomCard3 from "../../Card-wrapper/CustomCard3";
-import ButtonInCard from "../../Button-in-card/Button-in-card";
-import "./AboutMe.css";
+import React, { useState } from 'react';
+import CustomCard3 from '../../Card-wrapper/CustomCard3';
+import ButtonInCard from '../../Button-in-card/Button-in-card';
+import './AboutMe.css';
 
 const AboutMe = ({ title, id, cardNum }) => {
   const [readMore, setReadMore] = useState(false);
@@ -9,15 +9,15 @@ const AboutMe = ({ title, id, cardNum }) => {
   return (
     <CustomCard3 id={id} cardNum={cardNum} title={title}>
       <p className="aboutMePara1">
-        I am a Web Developer from Virginia, United States. I teach math
-        part-time to grades 6-12 in multiple states across the US.{" "}
+        I am a Web Developer at Virginia Tech who formerly taught math in
+        schools across various US states.{' '}
         <span
           className="readMore"
           onClick={() => setReadMore((readMore) => !readMore)}
         >
           {!readMore
-            ? "Click here to read more..."
-            : "Click here to read less..."}
+            ? 'Click here to read more...'
+            : 'Click here to read less...'}
         </span>
       </p>
       <div>
@@ -61,10 +61,10 @@ const AboutMe = ({ title, id, cardNum }) => {
               pretty good at setting up and running servers, building REST APIs,
               using Docker, Redis, setting up authentication, following best
               practices for storing data, understanding Data Structures and
-              Algorithms (currently learning more about it), using React, Redux,
-              Redux-Saga, SASS, styled-components, optimizing apps using
-              code-splitting, lazy loading, dynamic imports, storing data in
-              POSTGRES, Firebase Storage, MongoDB, etc.
+              Algorithms, using React, Redux, Redux-Saga, SASS,
+              styled-components, optimizing apps using code-splitting, lazy
+              loading, dynamic imports, storing data in POSTGRES, Firebase
+              Storage, MongoDB, etc.
             </p>
             <p className="aboutMePara1">
               {`All this sounds fancy, but to see it for yourself, you should
@@ -76,6 +76,14 @@ const AboutMe = ({ title, id, cardNum }) => {
             <p className="aboutMePara1">
               I hope this clarifies and provides enough information about my
               background as it pertains to programming.
+            </p>
+            <p className="aboutMePara1">
+              By the way, my best project so far (outside of work) is one that I
+              cannot share online. It is a full-stack application that I once
+              tried to convert into a SASS product. However, things did not go
+              as expected when I started to share that application with others.
+              Soon, I had to take the application offline. I still have videos
+              and stories of that product that I can share once we get in touch.
             </p>
           </>
         )}

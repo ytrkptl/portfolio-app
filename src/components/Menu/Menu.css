@@ -2,7 +2,7 @@
 
 /* The Overlay (background) */
 .overlay {
-  height: 0;/*Start with 0 here, then use JS to change it to 100% upon click of a button*/
+  height: 0; /*Start with 0 here, then use JS to change it to 100% upon click of a button*/
   width: 100%;
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
@@ -39,7 +39,8 @@
   transition: 0.3s; /* Transition effects on hover (color) */
 }
 /* When you mouse over the navigation links, change their color */
-.overlay-content button:hover, .overlay-content button:focus {
+.overlay-content button:hover,
+.overlay-content button:focus {
   color: gold;
 }
 /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */

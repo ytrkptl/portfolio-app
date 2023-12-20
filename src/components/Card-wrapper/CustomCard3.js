@@ -1,5 +1,5 @@
-import React from "react";
-import "./CustomCard.css";
+import React from 'react';
+import './CustomCard.css';
 
 const CustomCard3 = ({ title, id, children }) => {
   return (

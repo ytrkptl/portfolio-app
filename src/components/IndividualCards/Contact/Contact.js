@@ -1,7 +1,7 @@
-import React from "react";
-import CustomCard3 from "../../Card-wrapper/CustomCard3";
-import ButtonInCard from "../../Button-in-card/Button-in-card";
-import "./Contact.css";
+import React from 'react';
+import CustomCard3 from '../../Card-wrapper/CustomCard3';
+import ButtonInCard from '../../Button-in-card/Button-in-card';
+import './Contact.css';
 
 const Contact = ({ title, id, cardNum }) => {
   return (
@@ -59,7 +59,7 @@ const Contact = ({ title, id, cardNum }) => {
               placeholder="Enter your message here."
             />
           </div>
-          <input type="text" name="_honey" style={{ display: "none" }} />
+          <input type="text" name="_honey" style={{ display: 'none' }} />
           <div className="contactFormDiv3">
             <button type="submit" className="sendButton">
               Send
@@ -67,7 +67,7 @@ const Contact = ({ title, id, cardNum }) => {
           </div>
         </form>
       </div>
-      <h3 className="contactSubtitle" style={{ paddingBottom: "0" }}>
+      <h3 className="contactSubtitle" style={{ paddingBottom: '0' }}>
         Connect/Social
       </h3>
       <div className="contactPillParent">
