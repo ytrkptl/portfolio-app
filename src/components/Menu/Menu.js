@@ -1,26 +1,26 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import "./Menu.css";
-import "./Hamburger.css";
-import { Data } from "../CardList/Data";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import './Menu.css';
+import './Hamburger.css';
+import { Data } from '../CardList/Data';
 
 const Menu = ({ scrollToFromMenu }) => {
   const hamburgerRef = React.createRef();
   const menuRef = React.createRef();
 
   const toggleFunc = () => {
-    hamburgerRef.current.classList.toggle("change");
-    if (hamburgerRef.current.className === "hamburgerContainer") {
+    hamburgerRef.current.classList.toggle('change');
+    if (hamburgerRef.current.className === 'hamburgerContainer') {
       closeNav();
     } else {
       openNav();
     }
   };
   const openNav = () => {
-    menuRef.current.style.height = "100%";
+    menuRef.current.style.height = '100%';
   };
   const closeNav = () => {
-    menuRef.current.style.height = "0%";
+    menuRef.current.style.height = '0%';
   };
 
   return (

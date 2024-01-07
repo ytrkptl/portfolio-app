@@ -1,13 +1,13 @@
-import React from "react";
-import Logo from "../Logo/Logo";
-import Menu from "../Menu/Menu";
-import { Data } from "../CardList/Data";
-import "./Navigation.css";
-import { Link } from "react-router-dom";
+import React from 'react';
+import Logo from '../Logo/Logo';
+import Menu from '../Menu/Menu';
+import { Data } from '../CardList/Data';
+import './Navigation.css';
+import { Link } from 'react-router-dom';
 
 const Navigation = ({ scrollToTop, scrollToFromMenu }) => {
   const handleClick = (fnName, id = null) => {
-    fnName === "scrollToTop" ? scrollToTop() : scrollToFromMenu(id);
+    fnName === 'scrollToTop' ? scrollToTop() : scrollToFromMenu(id);
   };
 
   return (
@@ -20,7 +20,7 @@ const Navigation = ({ scrollToTop, scrollToFromMenu }) => {
           id="titleBtn"
           className="grow"
           to="/"
-          onClick={() => handleClick("scrollToTop", null)}
+          onClick={() => handleClick('scrollToTop', null)}
         >
           Yatrik's Portfolio
         </Link>
@@ -32,7 +32,7 @@ const Navigation = ({ scrollToTop, scrollToFromMenu }) => {
             id={`${el.id}Btn`}
             className="col3Btns grow"
             to={`/${el.url}`}
-            onClick={() => handleClick("scrollToFromMenu", el.id)}
+            onClick={() => handleClick('scrollToFromMenu', el.id)}
           >
             {el.name}
           </Link>
