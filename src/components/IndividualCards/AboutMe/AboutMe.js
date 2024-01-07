@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import CustomCard3 from '../../Card-wrapper/CustomCard3';
 import ButtonInCard from '../../Button-in-card/Button-in-card';
 import './AboutMe.css';
-
+//
 const AboutMe = ({ title, id, cardNum }) => {
   const [readMore, setReadMore] = useState(false);
 
