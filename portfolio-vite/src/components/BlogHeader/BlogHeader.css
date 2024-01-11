@@ -1,0 +1,22 @@
+.blog-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  background: #ddd;
+  min-height: 200px;
+  margin-top: -8px;
+}
+
+@media screen and (max-width: 600px) {
+  .blog-header {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-left: -1em;
+    margin-right: -1em;
+  }
+}

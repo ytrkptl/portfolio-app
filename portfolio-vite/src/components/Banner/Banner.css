@@ -1,0 +1,89 @@
+.imageContainerParent {
+  display: block;
+  max-width: 960px;
+  margin: 0px auto;
+  margin-bottom: 20px;
+  max-height: 80%;
+  overflow: hidden;
+}
+.imageContainer {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  background: rgb(29, 28, 28);
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 10px;
+  max-width: 960px;
+  text-align: center;
+  margin: 10px 10px 0px 10px;
+  box-shadow: 2px 2px solid black;
+  min-height: 100vh;
+  padding-bottom: 15px;
+}
+.aboveNameText {
+  color: #ffeaa7;
+  text-align: center;
+  display: block;
+  font-size: 1.5em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: 700; /* same as bold */
+}
+.nameText {
+  color: #74b9ff;
+  text-align: center;
+  margin: 0px;
+  margin-bottom: 20px;
+  font-size: 48px;
+  font-weight: 700; /* same as bold */
+}
+.profilePhoto {
+  height: 140px;
+  width: 140px;
+  margin: 10px;
+  border-radius: 125px;
+}
+.belowNameText {
+  color: #e0e0e0;
+  text-align: center;
+  margin: 10px 0px;
+  font-style: italic;
+  display: block;
+  font-size: 1.17em;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: 700; /* same as bold */
+}
+.aboveFunctionText {
+  color: #00cec9;
+  text-align: center;
+  margin: 10px;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.be-sure-text {
+  color: lightgray;
+  font-size: small;
+  font-style: italic;
+  letter-spacing: 0.12rem;
+  margin-bottom: 3em;
+  color: gainsboro;
+}
+
+.before-after-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 400px;
+  overflow: hidden;
+  margin-bottom: 2em;
+}
