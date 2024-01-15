@@ -1,16 +1,8 @@
-# Yatrik's Portfolio
+# React + Vite
 
-This was made using Create-React-App (CRA), therefore, am leaving the default README-CRA.md documentation in this repo.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-# Notes for JuxtaPoseJS
+Currently, two official plugins are available:
 
-
-Share Link
-To embed in a Medium blog post, copy the code in the box below and paste it on a line by itself where you want your juxtapose to appear. (Learn more about oEmbed.) If you update the settings, don't forget to click "Publish" again.
-
-https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=89be6e3e-37f9-11ec-abb7-b9a7ff2ee17c
-
-Embed
-Copy the code in the box below and paste it into your web page or CMS. If you update the settings, don't forget to click "Publish" again.
-
-<iframe frameborder="0" class="juxtapose" width="100%" height="600" src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=89be6e3e-37f9-11ec-abb7-b9a7ff2ee17c"></iframe>
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh

@@ -1,7 +1,6 @@
-import React from 'react';
-import { BlogListData } from './BlogListData.js';
-import { Link } from 'react-router-dom';
-import './BlogList.css';
+import { BlogListData } from "./BlogListData.js";
+import { Link } from "react-router-dom";
+import "./BlogList.css";
 
 const BlogList = () => {
   return (
