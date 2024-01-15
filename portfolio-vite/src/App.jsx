@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import Navigation from "./components/Navigation/Navigation";
 import Banner from "./components/Banner/Banner";
 import CardList from "./components/CardList/CardList";
@@ -5,24 +6,25 @@ import MdxContainerWrapper from "./MdxContainer.jsx";
 import Footer from "./components/Footer/Footer";
 import arrow from "./assets/arrow2.png";
 import "./App.css";
-import { Link, Route, Routes } from "react-router-dom";
+import { Link, Route, Routes, useNavigate } from "react-router-dom";
 import { useEffect, useRef } from "react";
-
-// the following function accepts hashname or id
-// and scrolls to that id's location on the page
-export const scrollTo = (hashName) => {
-  if (hashName === "blog") return window.scrollTo(0, 0);
-  let parentRect = document.body.getBoundingClientRect();
-  let element = document.getElementById(hashName);
-  let rect = element.getBoundingClientRect();
-  let offset = rect.top - parentRect.top - 20;
-  window.scrollTo(0, offset);
-};
+import { useScrollTo } from "./custom-hooks/use-scroll-to.js";
 
 function Layout({ children }) {
   const rootDivRef = useRef(null);
+  const navigate = useNavigate();
+  const scrollTo = useScrollTo();
 
   useEffect(() => {
+    // show the move to top scroll button when the user scroll down.
+    const handleScroll = () => {
+      if (document.documentElement.scrollTop > 20) {
+        document.getElementById("floatingBtn").style.display = "flex";
+        checkIfScrollIsAtBottom();
+      } else {
+        document.getElementById("floatingBtn").style.display = "none";
+      }
+    };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -38,16 +40,6 @@ function Layout({ children }) {
       document.getElementById("floatingBtn").style.bottom = "66px";
     } else {
       document.getElementById("floatingBtn").style.bottom = "30px";
-    }
-  };
-
-  // show the move to top scroll button when the user scroll down.
-  const handleScroll = () => {
-    if (document.documentElement.scrollTop > 20) {
-      document.getElementById("floatingBtn").style.display = "flex";
-      checkIfScrollIsAtBottom();
-    } else {
-      document.getElementById("floatingBtn").style.display = "none";
     }
   };
 
@@ -69,11 +61,21 @@ function Layout({ children }) {
   // hamburger icon/overlay menu.
   const scrollToFromMenu = async (hashName) => {
     let toggler = document.getElementById("hamburgerRef");
-    toggler.click();
-    if (hashName !== "blog") {
-      await Promise.resolve(() => this.props.history.push(`/`));
+    if (toggler) {
+      toggler.click();
     }
-    scrollTo(hashName);
+    if (hashName === "blog") {
+      navigate(`/blog`);
+      return;
+    }
+    if (window.location.pathname.includes("blog")) {
+      setTimeout(() => {
+        scrollTo(hashName);
+      }, 500);
+    } else {
+      scrollTo(hashName);
+    }
+    navigate(`/`);
   };
 
   return (
@@ -117,8 +119,9 @@ function Home() {
 
 function App() {
   return (
-    <Routes path="/">
+    <Routes>
       <Route
+        path="/"
         index
         element={
           <Layout>

@@ -3,11 +3,21 @@ import Logo from "../Logo/Logo.jsx";
 import Menu from "../Menu/Menu.jsx";
 import { Data } from "../CardList/Data";
 import "./Navigation.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Navigation = ({ scrollToTop, scrollToFromMenu }) => {
-  const handleClick = (fnName, id = null) => {
-    fnName === "scrollToTop" ? scrollToTop() : scrollToFromMenu(id);
+  const navigate = useNavigate();
+
+  const handleClick = async (fnName, id = null, event) => {
+    if (fnName === "scrollToTop") {
+      scrollToTop();
+    } else {
+      event.preventDefault();
+      if (window.location.pathname.includes("blog")) {
+        await Promise.resolve(() => navigate(`/`));
+      }
+      scrollToFromMenu(id);
+    }
   };
 
   return (
@@ -20,7 +30,7 @@ const Navigation = ({ scrollToTop, scrollToFromMenu }) => {
           id="titleBtn"
           className="grow"
           to="/"
-          onClick={() => handleClick("scrollToTop", null)}
+          onClick={(e) => handleClick("scrollToTop", null, e)}
         >
           Yatrik's Portfolio
         </Link>
@@ -32,7 +42,7 @@ const Navigation = ({ scrollToTop, scrollToFromMenu }) => {
             id={`${el.id}Btn`}
             className="col3Btns grow"
             to={`/${el.url}`}
-            onClick={() => handleClick("scrollToFromMenu", el.id)}
+            onClick={(e) => handleClick("scrollToFromMenu", el.id, e)}
           >
             {el.name}
           </Link>
