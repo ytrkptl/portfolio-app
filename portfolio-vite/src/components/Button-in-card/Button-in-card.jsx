@@ -1,8 +1,8 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { scrollTo } from '../../containers/App';
+import React from "react";
+import { Link } from "react-router-dom";
+import { scrollTo } from "../../App";
 
-import './Button-in-card.css';
+import "./Button-in-card.css";
 
 const ButtonInCard = ({ nextCardIdAndUrl, bgColor }) => {
   return (
