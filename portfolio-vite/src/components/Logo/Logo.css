@@ -1,9 +1,0 @@
-/* refers to the dummy logo */
-#logo {
-  transition: all 0.2s ease-in-out; /*use along with transform property below*/
-  padding-top: 4px;
-}
-/* zooms in on the button/links upon hovering */
-#logo:hover {
-  transform: scale(1.1);
-}

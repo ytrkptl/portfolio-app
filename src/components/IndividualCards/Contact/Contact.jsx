@@ -15,7 +15,7 @@ const Contact = ({ title, id, cardNum }) => {
       <div className="contactPillParent">
         <form
           className="contactForm"
-          action={import.meta.env.REACT_APP_FORM_SUBMIT_URL}
+          action={import.meta.env.VITE_FORM_SUBMIT_URL}
           method="POST"
         >
           <div className="contactFormDiv">

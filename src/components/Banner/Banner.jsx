@@ -1,6 +1,5 @@
-import React from 'react';
-import ButtonInCard from '../Button-in-card/Button-in-card';
-import './Banner.css';
+import ButtonInCard from "../Button-in-card/Button-in-card";
+import "./Banner.css";
 
 const Banner = () => {
   return (
@@ -20,13 +19,13 @@ const Banner = () => {
         <p className="be-sure-text">
           A before/after slider that you can play with:
         </p>
-        <div className="before-after-container" style={{ maxWidth: '100%' }}>
+        <div className="before-after-container" style={{ maxWidth: "100%" }}>
           <iframe
             title="Before-After Slider"
             className="juxtapose"
             width="auto"
             height="400"
-            src={`https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=${process.env.REACT_APP_JUXTAPOSE_ID}`}
+            src={`https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=${process.env.VITE_JUXTAPOSE_ID}`}
           ></iframe>
         </div>
         <ButtonInCard nextCardIdAndUrl="about-me" />
