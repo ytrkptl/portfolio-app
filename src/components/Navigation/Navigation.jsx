@@ -13,9 +13,7 @@ const Navigation = ({ scrollToTop, scrollToFromMenu }) => {
       scrollToTop();
     } else {
       event.preventDefault();
-      if (window.location.pathname.includes("blog")) {
-        await Promise.resolve(() => navigate(`/`));
-      }
+      navigate(`/`);
       scrollToFromMenu(id);
     }
   };
@@ -37,17 +35,32 @@ const Navigation = ({ scrollToTop, scrollToFromMenu }) => {
       </div>
       <div id="col3">
         {Data.map((el) => (
-          <Link
-            key={el.id}
-            id={`${el.id}Btn`}
-            className="col3Btns grow"
-            to={`/${el.url}`}
-            onClick={(e) => handleClick("scrollToFromMenu", el.id, e)}
-          >
-            {el.name}
-          </Link>
+          <>
+            {el.isExternal ? (
+              <a
+                key={el.id}
+                id={`${el.id}Btn`}
+                className="col3Btns grow"
+                href={el.url}
+                target="_blank"
+                rel="noreferrer"
+              >
+                {el.name}
+              </a>
+            ) : (
+              <Link
+                key={el.id}
+                id={`${el.id}Btn`}
+                className="col3Btns grow"
+                to={`/${el.url}`}
+                onClick={(e) => handleClick("scrollToFromMenu", el.id, e)}
+              >
+                {el.name}
+              </Link>
+            )}
+          </>
         ))}
-        <Menu scrollToFromMenu={scrollToFromMenu} />
+        <Menu handleClick={handleClick} />
       </div>
     </nav>
   );
