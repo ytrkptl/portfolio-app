@@ -2,9 +2,6 @@ import { useCallback } from 'react';
 
 export const useScrollTo = () => {
   const scrollTo = useCallback((hashName) => {
-    if (hashName === "blog") {
-      return window.scrollTo(0, 0);
-    }
     let parentRect = document.body.getBoundingClientRect();
     let element = document.getElementById(hashName);
     if (element) {

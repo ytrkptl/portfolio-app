@@ -2,7 +2,6 @@
 import Navigation from "./components/Navigation/Navigation";
 import Banner from "./components/Banner/Banner";
 import CardList from "./components/CardList/CardList";
-import MdxContainerWrapper from "./MdxContainer.jsx";
 import Footer from "./components/Footer/Footer";
 import arrow from "./assets/arrow2.png";
 import "./App.css";
@@ -64,17 +63,7 @@ function Layout({ children }) {
     if (toggler) {
       toggler.click();
     }
-    if (hashName === "blog") {
-      navigate(`/blog`);
-      return;
-    }
-    if (window.location.pathname.includes("blog")) {
-      setTimeout(() => {
-        scrollTo(hashName);
-      }, 500);
-    } else {
-      scrollTo(hashName);
-    }
+    scrollTo(hashName);
     navigate(`/`);
   };
 
@@ -129,15 +118,6 @@ function App() {
           </Layout>
         }
       />
-      <Route
-        path="blog/*"
-        element={
-          <Layout>
-            <MdxContainerWrapper />
-          </Layout>
-        }
-      />
-
       {/* Using path="*"" means "match anything", so this route
                 acts like a catch-all for URLs that we don't have explicit
                 routes for. */}
