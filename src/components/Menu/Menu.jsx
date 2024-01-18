@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import { Link } from "react-router-dom";
 import "./Menu.css";
 import "./Hamburger.css";
@@ -28,7 +28,7 @@ const Menu = ({ handleClick }) => {
       <div ref={menuRef} id="myNav" className="overlay">
         <div className="overlay-content" id="overlay-content">
           {Data.map((el) => (
-            <>
+            <Fragment key={el.name}>
               {el.isExternal ? (
                 <a
                   key={el.id}
@@ -51,7 +51,7 @@ const Menu = ({ handleClick }) => {
                   {el.name}
                 </Link>
               )}
-            </>
+            </Fragment>
           ))}
         </div>
       </div>
