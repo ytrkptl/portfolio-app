@@ -4,6 +4,7 @@ import Menu from "../Menu/Menu.jsx";
 import { Data } from "../CardList/Data";
 import "./Navigation.css";
 import { Link, useNavigate } from "react-router-dom";
+import { Fragment } from "react";
 
 const Navigation = ({ scrollToTop, scrollToFromMenu }) => {
   const navigate = useNavigate();
@@ -35,7 +36,7 @@ const Navigation = ({ scrollToTop, scrollToFromMenu }) => {
       </div>
       <div id="col3">
         {Data.map((el) => (
-          <>
+          <Fragment key={el.url}>
             {el.isExternal ? (
               <a
                 key={el.id}
@@ -58,7 +59,7 @@ const Navigation = ({ scrollToTop, scrollToFromMenu }) => {
                 {el.name}
               </Link>
             )}
-          </>
+          </Fragment>
         ))}
         <Menu handleClick={handleClick} />
       </div>
