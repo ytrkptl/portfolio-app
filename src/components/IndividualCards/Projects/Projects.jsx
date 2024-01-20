@@ -1,12 +1,12 @@
-import React, { useState } from 'react';
-import CustomCard3 from '../../Card-wrapper/CustomCard3';
-import ButtonInCard from '../../Button-in-card/Button-in-card';
-import { projectData } from './ProjectData';
-import GitLogo from '../../../assets/GitHub-Mark-64px.png';
-import Modal from '../../Modal/Modal';
-import { RemoveScroll } from 'react-remove-scroll';
-import LinkIcon from '../../../assets/iconfinder-link.svg';
-import './Projects.css';
+import { useState } from "react";
+import CustomCard3 from "../../Card-wrapper/CustomCard3";
+import ButtonInCard from "../../Button-in-card/Button-in-card";
+import { projectData } from "./ProjectData";
+import GitLogo from "../../../assets/GitHub-Mark-64px.png";
+import Modal from "../../Modal/Modal";
+import { RemoveScroll } from "react-remove-scroll";
+import LinkIcon from "../../../assets/iconfinder-link.svg";
+import "./Projects.css";
 
 const Projects = ({ title, id, cardNum }) => {
   const [isModalOpen, openTheModal] = useState(false);
@@ -20,7 +20,7 @@ const Projects = ({ title, id, cardNum }) => {
   return (
     <CustomCard3 id={id} cardNum={cardNum} title={title}>
       <h3 className="projectSubtitle">
-        On a side note, be sure to{' '}
+        On a side note, be sure to{" "}
         <span className="projectSideNote">
           run the backend server links (if provided) first
         </span>
@@ -39,7 +39,7 @@ const Projects = ({ title, id, cardNum }) => {
               <img
                 src={el.imageUrl}
                 alt="project-name"
-                className={index !== 6 ? `projectsImage` : 'mobileImage'}
+                className={index !== 6 ? `projectsImage` : "mobileImage"}
               />
               <span className="projectsPill">{el.projectName}</span>
             </div>
@@ -141,21 +141,21 @@ const Projects = ({ title, id, cardNum }) => {
       <div className="projectsPillParent">
         <p className="projectsPill2">
           <a
-            href={'https://codepen.io/ytrkptl'}
+            href={"https://codepen.io/ytrkptl"}
             target="_blank"
             rel="noopener noreferrer"
           >
-            {'Find some of my projects on CodePen'}
+            {"Find some of my projects on CodePen"}
           </a>
         </p>
         <p className="projectsPill2">
           <a
-            href={'https://va-map-creator.vercel.app/'}
+            href={"https://va-map-creator.vercel.app/"}
             target="_blank"
             rel="noopener noreferrer"
           >
             {
-              'Check out this Virginia Map creator I made that allows you to download the map as an SVG file'
+              "Check out this Virginia Map creator I made that allows you to download the map as an SVG file"
             }
           </a>
         </p>
