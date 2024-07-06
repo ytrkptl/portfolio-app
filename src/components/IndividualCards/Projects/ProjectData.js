@@ -46,7 +46,7 @@ export const projectData = [
   },
   {
     projectName: 'School Employee Directory',
-    siteLink: `${process.env.VITE_ACHS_CLIENT_URL}`,
+    siteLink: `${process.env.VITE_ACHS_CLIENT_URL}/`,
     gitHubLink: 'https://github.com/ytrkptl/achsdirectory',
     siteBackendLink: `https://learnwithyatrik-api.onrender.com/api/achs-dir`,
     gHBackendLink: `https://github.com/ytrkptl/achsdirectory-api`,
