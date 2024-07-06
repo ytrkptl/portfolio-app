@@ -62,9 +62,14 @@ const Projects = ({ title, id, cardNum }) => {
                               className="modalRow3LinkLogoWrapper"
                               onClick={() => window.open(el.siteLink)}
                             >
-                              <span className="modalRow3SpanLink">
+                              <a
+                                href={`${el.siteLink}`}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="modalRow3SpanLink"
+                              >
                                 View Site
-                              </span>
+                              </a>
                               <img
                                 width="auto"
                                 height="24px"
@@ -78,9 +83,14 @@ const Projects = ({ title, id, cardNum }) => {
                               className="modalRow3LinkLogoWrapper"
                               onClick={() => window.open(el.gitHubLink)}
                             >
-                              <span className="modalRow3SpanLink">
+                              <a
+                                href={`${el.gitHubLink}`}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="modalRow3SpanLink"
+                              >
                                 GitHub Repo
-                              </span>
+                              </a>
                               <img
                                 width="auto"
                                 height="28px"
@@ -94,9 +104,14 @@ const Projects = ({ title, id, cardNum }) => {
                               className="modalRow3LinkLogoWrapper"
                               onClick={() => window.open(el.siteBackendLink)}
                             >
-                              <span className="modalRow3SpanLink">
+                              <a
+                                href={`${el.siteBackendLink}`}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="modalRow3SpanLink"
+                              >
                                 Backend Site
-                              </span>
+                              </a>
                               <img
                                 width="auto"
                                 height="24px"
@@ -110,9 +125,14 @@ const Projects = ({ title, id, cardNum }) => {
                               className="modalRow3LinkLogoWrapper"
                               onClick={() => window.open(el.gHBackendLink)}
                             >
-                              <span className="modalRow3SpanLink">
+                              <a
+                                href={`${el.gHBackendLink}`}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="modalRow3SpanLink"
+                              >
                                 Backend Repo
-                              </span>
+                              </a>
                               <img
                                 width="auto"
                                 height="28px"
