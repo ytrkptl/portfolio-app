@@ -34,7 +34,7 @@ export const projectData = [
   },
   {
     projectName: `Airtable Gatsby Blog`,
-    siteLink: 'https://yatrik-blog.netlify.com/',
+    siteLink: 'https://yatrik-blog.netlify.app/',
     gitHubLink: 'https://github.com/ytrkptl/yatrik-airtable-gatsby-blog',
     imageUrl: `https://res.cloudinary.com/dun1b4fpw/image/upload/f_auto,q_auto,w_auto/v1574951670/portfolioapp/blog.png`,
     description: `This server-side blog is built using Gatsby and is fully responsive
