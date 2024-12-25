@@ -7,7 +7,6 @@ import "./App.css";
 import { Link, Route, Routes, useNavigate } from "react-router-dom";
 import { useEffect, useRef } from "react";
 import { useScrollTo } from "./custom-hooks/use-scroll-to.js";
-import { apiFetch } from "./services/api-service.jsx";
 
 function Layout({ children }) {
   const rootDivRef = useRef(null);
@@ -96,23 +95,6 @@ function NoMatch() {
 }
 
 function Home() {
-  useEffect(() => {
-    const apiCall = async () => {
-      const data = await apiFetch(
-        `/nocodb/project_cards?currently_displaying=1`,
-        {
-          method: "GET",
-          headers: {
-            "Content-Type": "application/json",
-          },
-        }
-      );
-      
-    };
-
-    apiCall();
-  }, []);
-
   return (
     <div>
       <Banner />
