@@ -7,10 +7,6 @@
  * @throws {Error} If the request fails
  */
 export const apiFetch = async (endpoint, options) => {
-  try {
-    const response = await fetch(`${import.meta.env.VITE_API_BASE_URL}/api${endpoint}`, options);
-    return await response.json();
-  } catch (error) {
-    throw error;
-  }
+  const response = await fetch(`${import.meta.env.VITE_API_BASE_URL}/api${endpoint}`, options);
+  return await response.json();
 }
