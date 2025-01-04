@@ -86,13 +86,13 @@ const Projects = ({ title, id, cardNum }) => {
                         <div className="modalRow1">{el.project_name}</div>
                         <div className="modalRow2">{el.description}</div>
                         <div className="modalRow3">
-                          {el.site_frontend_link && (
+                          {el.frontend_site_link && (
                             <div
                               className="modalRow3LinkLogoWrapper"
-                              onClick={() => window.open(el.site_frontend_link)}
+                              onClick={() => window.open(el.frontend_site_link)}
                             >
                               <a
-                                href={`${el.site_frontend_link}`}
+                                href={`${el.frontend_site_link}`}
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="modalRow3SpanLink"
@@ -109,7 +109,7 @@ const Projects = ({ title, id, cardNum }) => {
                           )}
                           {el.frontend_github_link && (
                             <div
-                              className="modalRow3LinkLogoWrapper"
+                              className="modalRow3LinkLogoWrapper github-link"
                               onClick={() => window.open(el.frontend_github_link)}
                             >
                               <a
@@ -151,7 +151,7 @@ const Projects = ({ title, id, cardNum }) => {
                           )}
                           {el.backend_github_link && (
                             <div
-                              className="modalRow3LinkLogoWrapper"
+                              className="modalRow3LinkLogoWrapper github-link"
                               onClick={() => window.open(el.backend_github_link)}
                             >
                               <a
