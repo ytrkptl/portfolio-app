@@ -1,5 +1,4 @@
-/* eslint-disable react/prop-types */
-import Navigation from "./components/Navigation/Navigation";
+import Navigation from "./components/Navigation/Navigation.jsx";
 import Banner from "./components/Banner/Banner";
 import CardList from "./components/CardList/CardList";
 import Footer from "./components/Footer/Footer";
@@ -28,9 +27,10 @@ function Layout({ children }) {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // this function moves the scrollToTop Button a little higher
-  // when the user scrolls to the very bottom of the page
-  // so it doesn't overlap the footer.
+  /**
+   * This function moves the scrollToTop Button a little higher when the user scrolls to the very bottom of the page
+   * so it doesn't overlap the footer.
+   */
   const checkIfScrollIsAtBottom = () => {
     if (
       window.scrollY + window.innerHeight >=
@@ -42,10 +42,10 @@ function Layout({ children }) {
     }
   };
 
-  // this function scrolls back to the top of the page.
-  // it first checks if the hamburger icon overlay is displayed.
-  // if the overlay icon is displayed, close the overlay, then
-  // scroll to top.  Otherwise, simply scroll to top.
+  /**
+   * This function scrolls to the top of the page. It first checks if the hamburger icon overlay is displayed.
+   * If the overlay icon is displayed, close the overlay, then scroll to top. Otherwise, simply scroll to top.
+   */
   const scrollToTop = () => {
     let overlay = document.getElementById("overlay-content");
     let overlayHeight = overlay.clientHeight;
@@ -56,8 +56,7 @@ function Layout({ children }) {
     window.scrollTo(0, 0);
   };
 
-  // use this function to scroll to specified hashname from
-  // hamburger icon/overlay menu.
+  // use this function to scroll to specified hashname from hamburger icon/overlay menu.
   const scrollToFromMenu = async (hashName) => {
     let toggler = document.getElementById("hamburgerRef");
     if (toggler) {
@@ -119,8 +118,8 @@ function App() {
         }
       />
       {/* Using path="*"" means "match anything", so this route
-                acts like a catch-all for URLs that we don't have explicit
-                routes for. */}
+      acts like a catch-all for URLs that we don't have explicit
+      routes for. */}
       <Route path="*" element={<NoMatch />} />
     </Routes>
   );
