@@ -18,7 +18,6 @@
 }
 
 .change .bar1 {
-  -webkit-transform: translate(0px, 8px) rotate(-45deg);
   transform: translate(0px, 10px) rotate(-45deg);
 }
 
@@ -27,6 +26,5 @@
 }
 
 .change .bar3 {
-  -webkit-transform: translate(0px, -9px) rotate(45deg);
   transform: translate(0px, -10px) rotate(45deg);
 }
