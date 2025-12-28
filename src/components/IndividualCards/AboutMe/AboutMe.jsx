@@ -71,7 +71,10 @@ const AboutMe = ({ title, id, cardNum }) => {
               check out my projects included in this site. Apart from this, I
               sell math lessons online and have occasionally made math YouTube
               videos when needed. These skills can be easily brought over to
-              development as well. I have taken a couple of Master’s degree level courses in Cryptology, and Graph Theory via the University of Texas Rio Grande Valley. I am also currently enrolled in Master of Informational Technology program at Virginia Tech to gain more credentials.`}
+              development as well. I have taken a couple of Master’s degree level 
+              courses in Cryptology, and Graph Theory via the University of Texas 
+              Rio Grande Valley. I also have a Master's degree in Informational 
+              Technology from Virginia Tech.`}
             </p>
             <p className="aboutMePara1">
               I hope this clarifies and provides enough information about my
