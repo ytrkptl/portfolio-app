@@ -1,5 +1,5 @@
-import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
-import { apiFetch } from "../../services/api-service";
+import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
+import { apiFetch } from '../../services/api-service';
 
 const INITIAL_STATE = {
   projectsData: [],
@@ -21,12 +21,12 @@ export const fetchProjects = createAsyncThunk(
 );
 
 export const projectsSlice = createSlice({
-  name: "projects",
+  name: 'projects',
   initialState: INITIAL_STATE,
   reducers: {
     setProjects(state, action) {
       state.projectsData = action.payload;
-    },
+    }
   },
   extraReducers: (builder) => {
     builder

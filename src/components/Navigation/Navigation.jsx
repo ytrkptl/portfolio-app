@@ -1,15 +1,15 @@
-import Logo from "../Logo/Logo.jsx";
-import Menu from "../Menu/Menu.jsx";
-import { Data } from "../CardList/Data";
-import "./Navigation.css";
-import { Link, useNavigate } from "react-router-dom";
-import { Fragment } from "react";
+import Logo from '../Logo/Logo.jsx';
+import Menu from '../Menu/Menu.jsx';
+import { Data } from '../CardList/Data';
+import './Navigation.css';
+import { Link, useNavigate } from 'react-router-dom';
+import { Fragment } from 'react';
 
 const Navigation = ({ scrollToTop, scrollToFromMenu }) => {
   const navigate = useNavigate();
 
   const handleClick = async (fnName, id = null, event) => {
-    if (fnName === "scrollToTop") {
+    if (fnName === 'scrollToTop') {
       scrollToTop();
     } else {
       event.preventDefault();
@@ -28,8 +28,7 @@ const Navigation = ({ scrollToTop, scrollToFromMenu }) => {
           id="titleBtn"
           className="grow"
           to="/"
-          onClick={(e) => handleClick("scrollToTop", null, e)}
-        >
+          onClick={(e) => handleClick('scrollToTop', null, e)}>
           Yatrik&apos;s Portfolio
         </Link>
       </div>
@@ -43,8 +42,7 @@ const Navigation = ({ scrollToTop, scrollToFromMenu }) => {
                 className="col3Btns grow"
                 href={el.url}
                 target="_blank"
-                rel="noreferrer"
-              >
+                rel="noreferrer">
                 {el.name}
               </a>
             ) : (
@@ -53,8 +51,7 @@ const Navigation = ({ scrollToTop, scrollToFromMenu }) => {
                 id={`${el.id}Btn`}
                 className="col3Btns grow"
                 to={`/${el.url}`}
-                onClick={(e) => handleClick("scrollToFromMenu", el.id, e)}
-              >
+                onClick={(e) => handleClick('scrollToFromMenu', el.id, e)}>
                 {el.name}
               </Link>
             )}

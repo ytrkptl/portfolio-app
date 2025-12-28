@@ -1,9 +1,11 @@
-import ButtonInCard from "../Button-in-card/Button-in-card";
-import "./Banner.css";
+import ButtonInCard from '../Button-in-card/Button-in-card';
+import './Banner.css';
 
 const Banner = () => {
   return (
-    <div className="imageContainerParent" id="banner">
+    <div
+      className="imageContainerParent"
+      id="banner">
       <div className="imageContainer">
         <span className="aboveNameText">Meet Me</span>
         <h1 className="nameText">Yatrik Patel</h1>
@@ -19,7 +21,9 @@ const Banner = () => {
         <p className="be-sure-text">
           A before/after slider that you can play with:
         </p>
-        <div className="before-after-container" style={{ maxWidth: "100%" }}>
+        <div
+          className="before-after-container"
+          style={{ maxWidth: '100%' }}>
           <iframe
             title="Before-After Slider"
             className="juxtapose"
@@ -27,8 +31,7 @@ const Banner = () => {
             height="400"
             src={`https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=${
               import.meta.env.VITE_JUXTAPOSE_ID
-            }`}
-          ></iframe>
+            }`}></iframe>
         </div>
         <ButtonInCard nextCardIdAndUrl="about-me" />
       </div>

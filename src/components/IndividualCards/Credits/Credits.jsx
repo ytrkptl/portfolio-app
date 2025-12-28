@@ -14,23 +14,30 @@ let credits = [
   'https://tinypng.com/',
   'https://www.iloveimg.com/crop-image',
   'https://mockuphone.com/#ios',
-  'Math Processor Logo from http://www.clker.com/clipart-math-processor.html',
+  'Math Processor Logo from http://www.clker.com/clipart-math-processor.html'
 ];
 
 const Credits = ({ title, id, cardNum }) => {
   return (
-    <CustomCard3 id={id} cardNum={cardNum} title={title}>
+    <CustomCard3
+      id={id}
+      cardNum={cardNum}
+      title={title}>
       <h3 className="creditsSubtitle">
         Some resources and/or tools I used to create this App:
       </h3>
       <div className="creditsPillParent">
         {credits.map((el, index) => {
           return index < credits.length - 2 ? (
-            <span key={index} className="creditsPill">
+            <span
+              key={index}
+              className="creditsPill">
               {el}
             </span>
           ) : (
-            <div key={index} className="creditsPill2">
+            <div
+              key={index}
+              className="creditsPill2">
               <span className="creditsPill">{el}</span>
             </div>
           );

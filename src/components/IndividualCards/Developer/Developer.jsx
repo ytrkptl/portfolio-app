@@ -35,12 +35,15 @@ let skills = [
   'Python',
   'Flask',
   'Jest',
-  'Cypress',
+  'Cypress'
 ];
 
 const Developer = ({ title, id, cardNum }) => {
   return (
-    <CustomCard3 id={id} cardNum={cardNum} title={title}>
+    <CustomCard3
+      id={id}
+      cardNum={cardNum}
+      title={title}>
       <h3 className="devSubtitle">
         I&apos;ve built my projects with the following, i.e. have experience
         using the following:
@@ -48,13 +51,18 @@ const Developer = ({ title, id, cardNum }) => {
       <div className="devPillParent">
         {skills.map((el, index) => {
           return (
-            <span key={index} className="devPill">
+            <span
+              key={index}
+              className="devPill">
               {el}
             </span>
           );
         })}
       </div>
-      <ButtonInCard nextCardIdAndUrl="teacher" bgColor="pink" />
+      <ButtonInCard
+        nextCardIdAndUrl="teacher"
+        bgColor="pink"
+      />
     </CustomCard3>
   );
 };

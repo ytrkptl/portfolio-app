@@ -7,14 +7,16 @@ const AboutMe = ({ title, id, cardNum }) => {
   const [readMore, setReadMore] = useState(false);
 
   return (
-    <CustomCard3 id={id} cardNum={cardNum} title={title}>
+    <CustomCard3
+      id={id}
+      cardNum={cardNum}
+      title={title}>
       <p className="aboutMePara1">
         I am a Web Developer at Virginia Tech who formerly taught math in
         schools across various US states.{' '}
         <span
           className="readMore"
-          onClick={() => setReadMore((readMore) => !readMore)}
-        >
+          onClick={() => setReadMore((readMore) => !readMore)}>
           {!readMore
             ? 'Click here to read more...'
             : 'Click here to read less...'}
@@ -92,7 +94,10 @@ const AboutMe = ({ title, id, cardNum }) => {
         )}
       </div>
 
-      <ButtonInCard nextCardIdAndUrl="projects" bgColor="pink" />
+      <ButtonInCard
+        nextCardIdAndUrl="projects"
+        bgColor="pink"
+      />
     </CustomCard3>
   );
 };
