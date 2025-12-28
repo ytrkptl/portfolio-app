@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import Logo from "../Logo/Logo.jsx";
 import Menu from "../Menu/Menu.jsx";
 import { Data } from "../CardList/Data";
@@ -31,7 +30,7 @@ const Navigation = ({ scrollToTop, scrollToFromMenu }) => {
           to="/"
           onClick={(e) => handleClick("scrollToTop", null, e)}
         >
-          Yatrik's Portfolio
+          Yatrik&apos;s Portfolio
         </Link>
       </div>
       <div id="col3">

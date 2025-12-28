@@ -1,3 +1,3 @@
 # Yatrik's Portfolio
 
-This project was created using Vite + React, therefore, the README-vite.md file is available apart from this one.
+This project contains the source code for my portfolio website. It was created using a Vite + React template.
