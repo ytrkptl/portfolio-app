@@ -13,20 +13,6 @@ function Layout({ children }) {
   const navigate = useNavigate();
   const scrollTo = useScrollTo();
 
-  useEffect(() => {
-    // show the move to top scroll button when the user scroll down.
-    const handleScroll = () => {
-      if (document.documentElement.scrollTop > 20) {
-        document.getElementById("floatingBtn").style.display = "flex";
-        checkIfScrollIsAtBottom();
-      } else {
-        document.getElementById("floatingBtn").style.display = "none";
-      }
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
   /**
    * This function moves the scrollToTop Button a little higher when the user scrolls to the very bottom of the page
    * so it doesn't overlap the footer.
@@ -41,6 +27,22 @@ function Layout({ children }) {
       document.getElementById("floatingBtn").style.bottom = "30px";
     }
   };
+
+  useEffect(() => {
+    // show the move to top scroll button when the user scroll down.
+    const handleScroll = () => {
+      if (document.documentElement.scrollTop > 20) {
+        document.getElementById("floatingBtn").style.display = "flex";
+        checkIfScrollIsAtBottom();
+      } else {
+        document.getElementById("floatingBtn").style.display = "none";
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+
 
   /**
    * This function scrolls to the top of the page. It first checks if the hamburger icon overlay is displayed.
