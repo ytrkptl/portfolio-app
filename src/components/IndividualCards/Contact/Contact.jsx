@@ -1,13 +1,18 @@
-import CustomCard3 from "../../Card-wrapper/CustomCard3";
-import ButtonInCard from "../../Button-in-card/Button-in-card";
-import "./Contact.css";
+import CustomCard3 from '../../Card-wrapper/CustomCard3';
+import ButtonInCard from '../../Button-in-card/Button-in-card';
+import './Contact.css';
 
 const Contact = ({ title, id, cardNum }) => {
   return (
-    <CustomCard3 id={id} cardNum={cardNum} title={title}>
+    <CustomCard3
+      id={id}
+      cardNum={cardNum}
+      title={title}>
       <h3 className="contactSubtitle">
         Get in touch with me by filling out the form below or email me at {` `}
-        <a target="_top" href="mailto:ytrkptl.ndmlr@gmail.com">
+        <a
+          target="_top"
+          href="mailto:ytrkptl.ndmlr@gmail.com">
           ytrkptl.ndmlr@gmail.com
         </a>
         :
@@ -16,10 +21,11 @@ const Contact = ({ title, id, cardNum }) => {
         <form
           className="contactForm"
           action={import.meta.env.VITE_FORM_SUBMIT_URL}
-          method="POST"
-        >
+          method="POST">
           <div className="contactFormDiv">
-            <label className="contactLabel" htmlFor="name">
+            <label
+              className="contactLabel"
+              htmlFor="name">
               Name:
             </label>
             <input
@@ -32,11 +38,20 @@ const Contact = ({ title, id, cardNum }) => {
             />
           </div>
           <div className="contactFormDiv">
-            <label className="contactLabel" htmlFor="email">
+            <label
+              className="contactLabel"
+              htmlFor="email">
               Email:
             </label>
-            <input type="hidden" name="_replyto" />
-            <input type="hidden" name="_subject" value="New submission!" />
+            <input
+              type="hidden"
+              name="_replyto"
+            />
+            <input
+              type="hidden"
+              name="_subject"
+              value="New submission!"
+            />
             <input
               name="email"
               type="email"
@@ -47,7 +62,9 @@ const Contact = ({ title, id, cardNum }) => {
             />
           </div>
           <div className="contactFormDiv2">
-            <label className="contactLabel2" htmlFor="message">
+            <label
+              className="contactLabel2"
+              htmlFor="message">
               Message:
             </label>
             <textarea
@@ -58,15 +75,23 @@ const Contact = ({ title, id, cardNum }) => {
               placeholder="Enter your message here."
             />
           </div>
-          <input type="text" name="_honey" style={{ display: "none" }} />
+          <input
+            type="text"
+            name="_honey"
+            style={{ display: 'none' }}
+          />
           <div className="contactFormDiv3">
-            <button type="submit" className="sendButton">
+            <button
+              type="submit"
+              className="sendButton">
               Send
             </button>
           </div>
         </form>
       </div>
-      <h3 className="contactSubtitle" style={{ paddingBottom: "0" }}>
+      <h3
+        className="contactSubtitle"
+        style={{ paddingBottom: '0' }}>
         Connect/Social
       </h3>
       <div className="contactPillParent">
@@ -74,8 +99,7 @@ const Contact = ({ title, id, cardNum }) => {
           <a
             href="https://blog.yatrik.dev/"
             target="_blank"
-            rel="noopener noreferrer"
-          >
+            rel="noopener noreferrer">
             Hashnode Powered Blog
           </a>
         </p>
@@ -83,8 +107,7 @@ const Contact = ({ title, id, cardNum }) => {
           <a
             href="https://dev.to/ytrkptl"
             target="_blank"
-            rel="noopener noreferrer"
-          >
+            rel="noopener noreferrer">
             Dev.to
           </a>
         </p>
@@ -92,8 +115,7 @@ const Contact = ({ title, id, cardNum }) => {
           <a
             href="https://twitter.com/ytrkptl"
             target="_blank"
-            rel="noopener noreferrer"
-          >
+            rel="noopener noreferrer">
             Twitter
           </a>
         </p>
@@ -101,13 +123,15 @@ const Contact = ({ title, id, cardNum }) => {
           <a
             href="https://www.facebook.com/yatrik.patel.56/"
             target="_blank"
-            rel="noopener noreferrer"
-          >
+            rel="noopener noreferrer">
             Facebook
           </a>
         </p>
       </div>
-      <ButtonInCard nextCardIdAndUrl="credits" bgColor="pink" />
+      <ButtonInCard
+        nextCardIdAndUrl="credits"
+        bgColor="pink"
+      />
     </CustomCard3>
   );
 };

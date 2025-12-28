@@ -15,12 +15,15 @@ let skills = [
   'Accommodating instruction and materials for students',
   'Differentiating Instruction',
   'Supervising students learning online',
-  'Participating in all kinds of meetings',
+  'Participating in all kinds of meetings'
 ];
 
 const Teacher = ({ title, id, cardNum }) => {
   return (
-    <CustomCard3 id={id} cardNum={cardNum} title={title}>
+    <CustomCard3
+      id={id}
+      cardNum={cardNum}
+      title={title}>
       <h3 className="teacherSubtitle">
         Math teacher licensed to teach in Virginia, West Virginia, Tennessee,
         and South Carolina.
@@ -40,7 +43,9 @@ const Teacher = ({ title, id, cardNum }) => {
       <div className="teacherPillParent">
         {skills.map((el, index) => {
           return (
-            <span key={index} className="teacherPill">
+            <span
+              key={index}
+              className="teacherPill">
               {el}
             </span>
           );
@@ -52,8 +57,7 @@ const Teacher = ({ title, id, cardNum }) => {
           <a
             href={'https://www.teacherspayteachers.com/Store/Yatrik-Patel'}
             target="_blank"
-            rel="noopener noreferrer"
-          >
+            rel="noopener noreferrer">
             {'Find my products on Teachers Pay Teachers'}
           </a>
         </p>
@@ -61,13 +65,15 @@ const Teacher = ({ title, id, cardNum }) => {
           <a
             href={'https://www.youtube.com/channel/UCfUeFFSqv4i0O9X6wzxojQA'}
             target="_blank"
-            rel="noopener noreferrer"
-          >
+            rel="noopener noreferrer">
             {"A Few Videos I've made in the past"}
           </a>
         </p>
       </div>
-      <ButtonInCard nextCardIdAndUrl="contact" bgColor="pink" />
+      <ButtonInCard
+        nextCardIdAndUrl="contact"
+        bgColor="pink"
+      />
     </CustomCard3>
   );
 };

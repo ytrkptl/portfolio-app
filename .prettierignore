@@ -1,0 +1,64 @@
+# Dependencies
+node_modules
+**/node_modules
+
+# Build outputs
+dist
+build
+.next
+.vite
+coverage
+
+# Test reports (generated)
+playwright-report
+test-results
+
+# Logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment files
+.env
+.env.*
+
+# Lock files
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
+
+# Security reports
+owasp-reports
+zap-reports
+
+# Generated files
+*.min.js
+*.min.css
+
+# Cache
+.cache
+*.cache
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode
+.idea
+
+# Git
+.git
+.gitignore
+.gitattributes
+
+# Docker
+.dockerignore
+
+# CI/CD
+.github
+
+# Prettier itself
+.prettierignore
