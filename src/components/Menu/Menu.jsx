@@ -38,7 +38,7 @@ const Menu = ({ handleClick }) => {
                 <a
                   key={el.id}
                   id={`${el.id}Btn`}
-                  className="col3Btns grow"
+                  className="col3MenuLinks grow"
                   href={el.url}
                   target="_blank"
                   rel="noreferrer">

@@ -1,14 +1,15 @@
 {
   "name": "portfolio-vite",
   "private": true,
-  "version": "0.1.0",
+  "version": "0.1.4",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "format": "prettier --write \"src/**/*.js\" \"src/**/*.jsx\""
+    "format": "prettier --write \"src/**/*.js\" \"src/**/*.jsx\"",
+    "version": "auto-changelog -p && git add CHANGELOG.md"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.5.0",
