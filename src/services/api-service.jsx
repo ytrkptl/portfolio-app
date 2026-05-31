@@ -11,5 +11,9 @@ export const apiFetch = async (endpoint, options) => {
     `${import.meta.env.VITE_API_BASE_URL}/api${endpoint}`,
     options
   );
-  return await response.json();
+  const data = await response.json();
+  if (!response.ok) {
+    throw new Error(data?.error?.message || `Request failed (${response.status})`);
+  }
+  return data;
 };
