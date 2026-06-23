@@ -10,7 +10,7 @@ const INITIAL_STATE = {
 export const fetchProjects = createAsyncThunk(
   'projects/fetchProjects',
   async () => {
-    const data = await apiFetch('/nocodb/project_cards', {
+    const data = await apiFetch('/nocodb-v2/project_cards', {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json'
