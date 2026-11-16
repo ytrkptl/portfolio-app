@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router';
 import { useScrollTo } from '../../custom-hooks/use-scroll-to';
 import './Button-in-card.css';
 

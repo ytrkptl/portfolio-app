@@ -2,7 +2,7 @@ import Logo from '../Logo/Logo.jsx';
 import Menu from '../Menu/Menu.jsx';
 import { Data } from '../CardList/Data';
 import './Navigation.css';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router';
 import { Fragment } from 'react';
 
 const Navigation = ({ scrollToTop, scrollToFromMenu }) => {
