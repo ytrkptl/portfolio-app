@@ -4,7 +4,7 @@ import CardList from './components/CardList/CardList';
 import Footer from './components/Footer/Footer';
 import arrow from './assets/arrow2.png';
 import './App.css';
-import { Link, Route, Routes, useNavigate } from 'react-router-dom';
+import { Link, Route, Routes, useNavigate } from 'react-router';
 import { useEffect, useRef } from 'react';
 import { useScrollTo } from './custom-hooks/use-scroll-to.js';
 
